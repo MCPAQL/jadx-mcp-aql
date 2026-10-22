@@ -1,20 +1,23 @@
 <!-- SPDX-License-Identifier: AGPL-3.0-only -->
 # Validation
 
+Revalidated on 2026-10-22 after the MCP-AQL rename, in a fresh single-branch
+clone of `main` at `5eef033`. The development checkout was left unchanged.
+
 Both components build and all **36 tests pass**, including with outbound
 networking denied: 21 TypeScript tests, 8 JVM unit tests and 7 tests that compile
 and launch the unmodified REA 6.5.0 source bridge against the shim. This includes
 all original 30 tests and six confinement/signal regression checks. Fixture APKs
 are built from repository sources and are never executed.
 
-The primary package is `@mcpaql/jadx-aql@0.1.0`. Its five tools dispatch 20
+The primary package is `@mcpaql/jadx-mcp-aql@0.1.0`. Its five tools dispatch 20
 operations, including introspection. The JVM shim contains no main class and
 no MCP-AQL implementation.
 
 | Artifact | Bytes | SHA-256 |
 | --- | ---: | --- |
-| rea-compat.jar | 20,608,592 | `3548e1fc968154a3c40923ebf538fdeb0d9fb266b18a91c2567eb45970dfe1a7` |
-| mcpaql-jadx-aql-0.1.0.tgz | 34,734 | `277214ce05ae74ca6a41ee52bcde22bdad2b6d09a6cd785c943fc68e1f69bd85` |
+| rea-compat.jar | 20,608,596 | `5381d3a19d6d52f75781dee80da5d4683f6c8db408a292668f0e4223cf77a071` |
+| mcpaql-jadx-mcp-aql-0.1.0.tgz | 34,733 | `7fdfbb0013efbfca73a9e17624a6715da1eb313fa4aaaeff0014a82a28ef179b` |
 
 The JAR rebuilt identically from **two clean source trees in different paths**,
 using pinned Temurin 17.0.20.1+1 and SOURCE_DATE_EPOCH=1783641600.
@@ -57,7 +60,7 @@ characters / 307 tokens to
 baseline is unavailable.
 
 In the network-denied integration run, the REA bridge initialized in
-0.665 seconds, emitted 269 aggregate
+0.799 seconds, emitted 245 aggregate
 stderr bytes and had a largest stdout frame of 1,048,867 bytes.
 The TypeScript stdio integration test checks that server stderr is empty.
 

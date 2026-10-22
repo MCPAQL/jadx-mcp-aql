@@ -21,7 +21,7 @@ jobs:
           node-version: '24.16.0'
       - name: Verify tag and build tools
         run: |
-          node -e 'const p=require("./packages/jadx-aql/package.json"); if(process.env.GITHUB_REF_NAME!=="v"+p.version)process.exit(1)'
+          node -e 'const p=require("./packages/jadx-mcp-aql/package.json"); if(process.env.GITHUB_REF_NAME!=="v"+p.version)process.exit(1)'
           python3 scripts/bootstrap.py
       - name: Build, test and check reproducibility
         run: |
@@ -38,7 +38,7 @@ jobs:
         run: |
           mkdir artifacts
           cp rea-compat/build/libs/rea-compat.jar artifacts/
-          npm pack --workspace @mcpaql/jadx-aql --pack-destination artifacts
+          npm pack --workspace @mcpaql/jadx-mcp-aql --pack-destination artifacts
           cd artifacts
           sha256sum rea-compat.jar *.tgz > SHA256SUMS
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
@@ -73,7 +73,7 @@ jobs:
         with:
           subject-path: artifacts/*
       - name: Publish public npm package with provenance
-        # Configure this workflow as a trusted publisher for @mcpaql/jadx-aql.
+        # Configure this workflow as a trusted publisher for @mcpaql/jadx-mcp-aql.
         run: npm publish --provenance --access public artifacts/*.tgz
       - name: Publish GitHub release files and attestation bundle
         env:

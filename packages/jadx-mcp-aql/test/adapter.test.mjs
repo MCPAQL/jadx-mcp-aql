@@ -16,7 +16,7 @@ async function call(operation,params={},category='read'){
   const result=await adapter.call('mcp_aql_'+category,operation,params);
   assert.equal(result.success,true,JSON.stringify(result));return result.data;
 }
-before(async()=>{temporary=await mkdtemp(join(tmpdir(),'jadx-aql-test-'));adapter=new Adapter({jar,java,allowedRoots:[root,temporary]});await call('load_apk',{path:apk},'create');});
+before(async()=>{temporary=await mkdtemp(join(tmpdir(),'jadx-mcp-aql-test-'));adapter=new Adapter({jar,java,allowedRoots:[root,temporary]});await call('load_apk',{path:apk},'create');});
 after(async()=>{await adapter.close();await rm(temporary,{recursive:true,force:true});});
 test('five CRUDE tools with runtime introspection and type schemas',async()=>{
   assert.equal(tools.length,5);

@@ -19,7 +19,7 @@
     "mechanism": "macOS sandbox-exec deny network"
   },
   "reproducible_jar": {
-    "sha256": "3548e1fc968154a3c40923ebf538fdeb0d9fb266b18a91c2567eb45970dfe1a7",
+    "sha256": "5381d3a19d6d52f75781dee80da5d4683f6c8db408a292668f0e4223cf77a071",
     "identical": true,
     "independent_source_paths": true,
     "clean_compilations": 2,
@@ -27,20 +27,20 @@
   },
   "jar": {
     "file": "rea-compat.jar",
-    "bytes": 20608592,
-    "sha256": "3548e1fc968154a3c40923ebf538fdeb0d9fb266b18a91c2567eb45970dfe1a7",
+    "bytes": 20608596,
+    "sha256": "5381d3a19d6d52f75781dee80da5d4683f6c8db408a292668f0e4223cf77a071",
     "central_directory_bytes": 1308246
   },
   "npm_package": {
-    "file": "mcpaql-jadx-aql-0.1.0.tgz",
-    "bytes": 34734,
-    "sha256": "277214ce05ae74ca6a41ee52bcde22bdad2b6d09a6cd785c943fc68e1f69bd85",
+    "file": "mcpaql-jadx-mcp-aql-0.1.0.tgz",
+    "bytes": 34733,
+    "sha256": "7fdfbb0013efbfca73a9e17624a6715da1eb313fa4aaaeff0014a82a28ef179b",
     "files": 16,
     "public_content_scan": "passed"
   },
   "rea_runtime": {
-    "initialize_seconds": 0.665276792,
-    "stderr_bytes": 269,
+    "initialize_seconds": 0.799368584,
+    "stderr_bytes": 245,
     "max_frame_bytes": 1048867
   },
   "dependency_records": 262,
@@ -56,7 +56,7 @@
     "Official CLI cannot expose raw smali or complete use-in inventories"
   ],
   "reproducible_npm": {
-    "sha256": "277214ce05ae74ca6a41ee52bcde22bdad2b6d09a6cd785c943fc68e1f69bd85",
+    "sha256": "7fdfbb0013efbfca73a9e17624a6715da1eb313fa4aaaeff0014a82a28ef179b",
     "identical": true,
     "independent_source_paths": true,
     "clean_compilations": 2,

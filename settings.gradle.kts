@@ -10,5 +10,5 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "jadx-aql"
+rootProject.name = "jadx-mcp-aql"
 include("rea-compat")

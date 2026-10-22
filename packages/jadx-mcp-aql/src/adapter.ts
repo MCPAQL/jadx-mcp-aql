@@ -88,7 +88,7 @@ export class Adapter {
     if(!file.isFile()||file.size>512*1024*1024)throw new Error('Input must be a regular file no larger than 512 MiB');
     if(!['.apk','.dex','.jar','.class','.xapk'].includes(extname(input).toLowerCase()))throw new Error('Supported input extensions: apk, dex, jar, class, xapk');
     await verifyCli(this.options.jar);
-    const dir=await mkdtemp(join(tmpdir(),'jadx-aql-'));
+    const dir=await mkdtemp(join(tmpdir(),'jadx-mcp-aql-'));
     try {
       // The CLI writes only to this owned cache; the immutable input remains in place.
       let partial=false;

@@ -1,5 +1,5 @@
 <!-- SPDX-License-Identifier: AGPL-3.0-only -->
-# JADX AQL
+# JADX MCP-AQL
 
 An offline MCP-AQL adapter for Android package analysis, with a separate JVM
 compatibility library for REA 6.5.0. Original code is **AGPL-3.0-only**.
@@ -7,7 +7,7 @@ compatibility library for REA 6.5.0. Original code is **AGPL-3.0-only**.
 
 | Component | Purpose |
 | --- | --- |
-| `packages/jadx-aql` | Primary TypeScript stdio server. Runs the unmodified, checksum-pinned official JADX 1.5.6 CLI as a subprocess. |
+| `packages/jadx-mcp-aql` | Primary TypeScript stdio server. Runs the unmodified, checksum-pinned official JADX 1.5.6 CLI as a subprocess. |
 | `rea-compat` | Minimal Kotlin/JVM shim over jadx-core 1.5.6 for REA's Java bridge. No standalone server or MCP-AQL implementation. |
 
 ## Build and test
@@ -36,13 +36,13 @@ and binary-XML encoder. No third-party APKs are downloaded or executed.
 ## TypeScript adapter
 
 ```sh
-node packages/jadx-aql/dist/server.js \
+node packages/jadx-mcp-aql/dist/server.js \
   --jadx-jar "$PWD/.tools/jadx-1.5.6/lib/jadx-1.5.6-all.jar" \
   --java "$JAVA_HOME/bin/java" \
   --allow-root /path/to/apk-and-export-directory
 ```
 
-The installed npm command is `jadx-aql`. `JADX_CLI_JAR` and `JADX_JAVA` can supply
+The installed npm command is `jadx-mcp-aql`. `JADX_CLI_JAR` and `JADX_JAVA` can supply
 the same paths. Input and export paths must be beneath an operator-configured
 allowed directory. Without `--allow-root`, only the launch directory is allowed;
 repeat `--allow-root` to authorize additional existing directories. Canonical
@@ -132,8 +132,8 @@ After downloading the release files, verify their hashes and GitHub attestations
 ```sh
 sha256sum -c SHA256SUMS
 # macOS: shasum -a 256 -c SHA256SUMS
-gh attestation verify rea-compat.jar --repo MCPAQL/jadx-aql
-gh attestation verify mcpaql-jadx-aql-0.1.0.tgz --repo MCPAQL/jadx-aql
+gh attestation verify rea-compat.jar --repo MCPAQL/jadx-mcp-aql
+gh attestation verify mcpaql-jadx-mcp-aql-0.1.0.tgz --repo MCPAQL/jadx-mcp-aql
 ```
 
 The workflow publishes that exact npm tarball with `npm publish --provenance`.

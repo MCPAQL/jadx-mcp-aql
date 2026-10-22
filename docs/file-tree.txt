@@ -1,5 +1,5 @@
 SPDX-License-Identifier: AGPL-3.0-only
-jadx-aql/
+jadx-mcp-aql/
 ├── .gitattributes
 ├── .github/
 │   └── workflows/
@@ -56,7 +56,7 @@ jadx-aql/
 ├── package.json
 ├── package.json.license
 ├── packages/
-│   └── jadx-aql/
+│   └── jadx-mcp-aql/
 │       ├── LICENSE
 │       ├── NOTICE
 │       ├── README.md

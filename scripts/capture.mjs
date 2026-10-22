@@ -5,7 +5,7 @@ import { resolve,join } from 'node:path';
 import { mkdir,writeFile } from 'node:fs/promises';
 const root=resolve(import.meta.dirname,'..'),out=join(root,'build/measurements');await mkdir(out,{recursive:true});
 const java=process.env.JADX_JAVA??join(process.env.JAVA_HOME,'bin/java');
-const transport=new StdioClientTransport({command:process.execPath,args:[join(root,'packages/jadx-aql/dist/server.js'),'--java',java,'--jadx-jar',process.env.JADX_CLI_JAR??join(root,'.tools/jadx-1.5.6/lib/jadx-1.5.6-all.jar')],stderr:'pipe'});
+const transport=new StdioClientTransport({command:process.execPath,args:[join(root,'packages/jadx-mcp-aql/dist/server.js'),'--java',java,'--jadx-jar',process.env.JADX_CLI_JAR??join(root,'.tools/jadx-1.5.6/lib/jadx-1.5.6-all.jar')],stderr:'pipe'});
 const client=new Client({name:'footprint-measurement',version:'1'});
 const save=async(name,data)=>writeFile(join(out,name+'.json'),JSON.stringify(data)+'\n');
 const call=async(name,operation,params={})=>client.callTool({name,arguments:{operation,params}});

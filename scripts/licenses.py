@@ -51,7 +51,7 @@ for name,entry in lock['packages'].items():
 rows.append({'ecosystem':'tool','coordinate':'tiktoken@0.12.0','scope':'optional measurement','licenses':[{'name':'MIT','url':'https://github.com/openai/tiktoken/blob/main/LICENSE'}]})
 rows.sort(key=lambda r:(r['ecosystem'],r['coordinate'],r['scope']))
 (OUT/'dependencies.json').write_text(json.dumps(rows,indent=2)+'\n')
-text='''JADX AQL
+text='''JADX MCP-AQL
 SPDX-License-Identifier: AGPL-3.0-only
 Copyright 2026 MCPAQL contributors
 
@@ -97,5 +97,5 @@ JADX 1.5.6 upstream NOTICE (reproduced verbatim)
 '''
 text+=(ROOT/'third-party/jadx-1.5.6/NOTICE').read_text()
 (ROOT/'NOTICE').write_text(text)
-for name in ['LICENSE','NOTICE']:(ROOT/'packages/jadx-aql'/name).write_bytes((ROOT/name).read_bytes())
+for name in ['LICENSE','NOTICE']:(ROOT/'packages/jadx-mcp-aql'/name).write_bytes((ROOT/name).read_bytes())
 print('Recorded',len(rows),'dependency components with publisher-declared licences.')

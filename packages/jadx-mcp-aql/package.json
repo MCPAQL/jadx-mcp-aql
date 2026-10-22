@@ -1,5 +1,5 @@
 {
-  "name": "@mcpaql/jadx-aql",
+  "name": "@mcpaql/jadx-mcp-aql",
   "version": "0.1.0",
   "description": "Offline MCP-AQL adapter for the official jadx CLI",
   "license": "AGPL-3.0-only",
@@ -8,7 +8,7 @@
     "node": ">=24.0.0"
   },
   "bin": {
-    "jadx-aql": "dist/server.js"
+    "jadx-mcp-aql": "dist/server.js"
   },
   "exports": "./dist/adapter.js",
   "files": [
@@ -23,8 +23,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MCPAQL/jadx-aql.git",
-    "directory": "packages/jadx-aql"
+    "url": "git+https://github.com/MCPAQL/jadx-mcp-aql.git",
+    "directory": "packages/jadx-mcp-aql"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json && node ../../scripts/license-dist.mjs",

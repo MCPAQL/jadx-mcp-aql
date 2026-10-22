@@ -1,10 +1,9 @@
 <!-- SPDX-License-Identifier: AGPL-3.0-only -->
 # Releasing
 
-Repository naming and creation are maintainer decisions. Do not create a remote
-repository, publish a package, or push a release tag as part of a local build.
-After a name is approved, update package repository metadata and verification
-examples to the chosen `MCPAQL/REPOSITORY` before the first release.
+The public repository is [MCPAQL/jadx-mcp-aql](https://github.com/MCPAQL/jadx-mcp-aql).
+The npm package and command are `@mcpaql/jadx-mcp-aql` and `jadx-mcp-aql`.
+Do not publish a package or push a release tag as part of a local build.
 
 ## Use a fresh single-branch clone
 
@@ -21,7 +20,7 @@ git for-each-ref --format='%(refname)'  # inspect the complete ref list
 git log main                        # inspect the public history
 # Only after remote creation is approved:
 git remote remove origin
-git remote add origin git@github.com:MCPAQL/REPOSITORY.git
+git remote add origin git@github.com:MCPAQL/jadx-mcp-aql.git
 git push -u origin main
 ```
 
@@ -40,7 +39,7 @@ Local-only snapshots are not release inputs.
 - Run CI in the approved repository and verify the Linux network-denied tests
   and reproducible-build checks before creating any `v*` tag. Local workflow
   validation does not establish that the remote workflow has run successfully.
-- Confirm that the tag version equals `packages/jadx-aql/package.json`.
+- Confirm that the tag version equals `packages/jadx-mcp-aql/package.json`.
 
 The release workflow builds/tests with read-only permissions, then passes hashed
 artifacts to a separate publishing job. Only that job receives release/OIDC/

@@ -1,10 +1,10 @@
 {
   "typescript_tests": {
-    "passed": 16,
+    "passed": 21,
     "failed": 0
   },
   "shim_unit_tests": {
-    "passed": 7,
+    "passed": 8,
     "failed": 0
   },
   "rea_bridge_integration": {
@@ -12,12 +12,14 @@
     "failed": 0
   },
   "network_denied": {
-    "all_30_tests_passed": true,
+    "original_30_tests_passed": true,
+    "additional_regression_tests": 6,
+    "all_36_tests_passed": true,
     "outbound_probe_denied": true,
     "mechanism": "macOS sandbox-exec deny network"
   },
   "reproducible_jar": {
-    "sha256": "7deac1765a3d788bfda43bab67f44ff62c73f191ff68e50dd075727d3fa4b9ca",
+    "sha256": "3548e1fc968154a3c40923ebf538fdeb0d9fb266b18a91c2567eb45970dfe1a7",
     "identical": true,
     "independent_source_paths": true,
     "clean_compilations": 2,
@@ -25,19 +27,19 @@
   },
   "jar": {
     "file": "rea-compat.jar",
-    "bytes": 20590803,
-    "sha256": "7deac1765a3d788bfda43bab67f44ff62c73f191ff68e50dd075727d3fa4b9ca",
-    "central_directory_bytes": 1307905
+    "bytes": 20608592,
+    "sha256": "3548e1fc968154a3c40923ebf538fdeb0d9fb266b18a91c2567eb45970dfe1a7",
+    "central_directory_bytes": 1308246
   },
   "npm_package": {
     "file": "mcpaql-jadx-aql-0.1.0.tgz",
-    "bytes": 31017,
-    "sha256": "520b85f13d79b4b7c3ae21cf45c0b6e1b3cfd9cb52b32b40ecddb576f0a1c796",
+    "bytes": 34734,
+    "sha256": "277214ce05ae74ca6a41ee52bcde22bdad2b6d09a6cd785c943fc68e1f69bd85",
     "files": 16,
     "public_content_scan": "passed"
   },
   "rea_runtime": {
-    "initialize_seconds": 0.5123581669999999,
+    "initialize_seconds": 0.665276792,
     "stderr_bytes": 269,
     "max_frame_bytes": 1048867
   },
@@ -48,9 +50,34 @@
     "release_or_npm_publish_executed": false
   },
   "limitations": [
-    "No live REA VM test or installation",
+    "Not tested against a live REA installation",
     "Local tokenizer counts only; no Anthropic API count",
-    "No exact original tools/list baseline supplied",
+    "Exact legacy tools/list baseline unavailable",
     "Official CLI cannot expose raw smali or complete use-in inventories"
-  ]
+  ],
+  "reproducible_npm": {
+    "sha256": "277214ce05ae74ca6a41ee52bcde22bdad2b6d09a6cd785c943fc68e1f69bd85",
+    "identical": true,
+    "independent_source_paths": true,
+    "clean_compilations": 2,
+    "offline_dependency_install": true
+  },
+  "legal_checks": {
+    "jadx_notice_verbatim": true,
+    "jar_meta_inf_notice_matches_source": true,
+    "headless_mcp_interface_attribution": true,
+    "vendored_bridge_unchanged": true,
+    "vendored_bridge_sidecars": "MIT"
+  },
+  "hardening": {
+    "operator_allowed_roots": true,
+    "symlink_escape_rejection": true,
+    "signals_cleaned_up": [
+      "SIGINT",
+      "SIGTERM",
+      "SIGHUP"
+    ],
+    "active_load_cancelled_before_exit": true,
+    "release_write_permissions": "publish job only"
+  }
 }

@@ -31,7 +31,7 @@ tasks.withType<AbstractArchiveTask>().configureEach {
     isPreserveFileTimestamps = false; isReproducibleFileOrder = true
     inputs.property("SOURCE_DATE_EPOCH",epoch)
 }
-tasks.test { useJUnitPlatform(); maxHeapSize = "1g" }
+tasks.test { useJUnitPlatform(); maxHeapSize = "1g"; environment("JADX_ALLOWED_ROOTS", rootProject.projectDir.absolutePath) }
 val mergeServices by tasks.registering {
     inputs.files(configurations.runtimeClasspath)
     outputs.dir(layout.buildDirectory.dir("merged-services"))
@@ -57,7 +57,9 @@ val fatJar by tasks.registering(Jar::class) {
     archiveFileName.set("rea-compat.jar")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from(sourceSets.main.get().output)
+    into("META-INF") { from(rootProject.file("NOTICE")) }
     into("META-INF/mcpaql") { from(rootProject.file("LICENSE"),rootProject.file("NOTICE")) }
+    into("META-INF/dependency-notices/jadx-headless-mcp-0.7.1") { from(rootProject.file("third-party/jadx-headless-mcp-0.7.1/LICENSE")) }
     from({ configurations.runtimeClasspath.get().filter { it.extension == "jar" }.map { zipTree(it) } }) { exclude("META-INF/services/**") }
     exclude("META-INF/*.SF", "META-INF/*.RSA", "META-INF/*.DSA", "module-info.class", "META-INF/versions/**/module-info.class")
     from(layout.buildDirectory.dir("merged-services"))

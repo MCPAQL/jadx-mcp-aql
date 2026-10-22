@@ -2,7 +2,7 @@
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { resolve, join } from 'node:path';
-import { mkdtemp, readdir, readFile, rm } from 'node:fs/promises';
+import { mkdtemp, readdir, readFile, rm, symlink, copyFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { Adapter, tools, operations, textWindow } from '../dist/adapter.js';
 import { parseManifest } from '../dist/manifest.js';
@@ -16,7 +16,7 @@ async function call(operation,params={},category='read'){
   const result=await adapter.call('mcp_aql_'+category,operation,params);
   assert.equal(result.success,true,JSON.stringify(result));return result.data;
 }
-before(async()=>{temporary=await mkdtemp(join(tmpdir(),'jadx-aql-test-'));adapter=new Adapter({jar,java});await call('load_apk',{path:apk},'create');});
+before(async()=>{temporary=await mkdtemp(join(tmpdir(),'jadx-aql-test-'));adapter=new Adapter({jar,java,allowedRoots:[root,temporary]});await call('load_apk',{path:apk},'create');});
 after(async()=>{await adapter.close();await rm(temporary,{recursive:true,force:true});});
 test('five CRUDE tools with runtime introspection and type schemas',async()=>{
   assert.equal(tools.length,5);
@@ -87,6 +87,20 @@ test('subprocess timeout terminates the real CLI',async()=>{
 test('failed replacement preserves session; concurrent calls are serialized',async()=>{
   const results=await Promise.all([adapter.call('mcp_aql_create','load_apk',{path:'/missing.apk'}),adapter.call('mcp_aql_read','list_classes',{})]);
   assert.equal(results[0].success,false);assert.equal(results[1].data.total,2);
+});
+test('operator roots confine input and exports, including symlinked paths',async()=>{
+  const confined=new Adapter({jar,java,allowedRoots:[temporary]});
+  const outside=await mkdtemp(join(tmpdir(),'jadx-outside-'));
+  try{
+    await copyFile(apk,join(outside,'outside.apk'));
+    assert.equal((await confined.call('mcp_aql_create','load_apk',{path:apk})).error.code,'FORBIDDEN_PATH');
+    await symlink(join(outside,'outside.apk'),join(temporary,'escape.apk'));
+    assert.equal((await confined.call('mcp_aql_create','load_apk',{path:join(temporary,'escape.apk')})).error.code,'FORBIDDEN_PATH');
+    await symlink(outside,join(temporary,'outside-link'));
+    assert.equal((await adapter.call('mcp_aql_execute','export_sources',{output_dir:join(temporary,'outside-link','new')})).error.code,'FORBIDDEN_PATH');
+    assert.equal((await adapter.call('mcp_aql_execute','export_sources',{output_dir:join(outside,'new')})).error.code,'FORBIDDEN_PATH');
+    assert.deepEqual(await readdir(outside),['outside.apk']);
+  }finally{await confined.close();await rm(outside,{recursive:true,force:true});}
 });
 test('export creates only a new chosen directory; reload and unload work',async()=>{
   const output=join(temporary,'sources');const exported=await call('export_sources',{output_dir:output},'execute');assert.equal((await readdir(output)).length,exported.count);

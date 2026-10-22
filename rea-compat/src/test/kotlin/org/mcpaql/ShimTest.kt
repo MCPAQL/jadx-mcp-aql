@@ -33,5 +33,10 @@ class ShimTest {
     @Test fun replaceAndUnload(): Unit=runBlocking {
         val h=SessionHolder(SessionConfig());try {h.load(apk,h.defaults);val old=h.current();h.load(apk,h.defaults);assertNotSame(old,h.current());assertTrue(h.unload());assertFalse(h.unload())}finally{h.unload()}
     }
+    @Test fun inputRootsRejectEscapes() {
+        val fixture=java.nio.file.Path.of(apk).toRealPath()
+        assertEquals(fixture,InputPaths.requireAllowed(fixture,listOf(fixture.parent)))
+        assertThrows(IllegalArgumentException::class.java) { InputPaths.requireAllowed(fixture,listOf(java.nio.file.Path.of(System.getProperty("java.home")))) }
+    }
     @Test fun filteredAndXapk(){session(SessionConfig(includePackages=listOf("fixture.Caller"),resourceMode=ResourceMode.NONE)).use{assertEquals(1,it.classes.size);assertEquals(0,it.resourceCount)};JadxSession(File("../build/fixture/small.xapk").absolutePath,SessionConfig()).use{assertEquals(2,it.classes.size)}}
 }

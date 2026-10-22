@@ -41,7 +41,7 @@
     "tools_approx": 25,
     "chars": null,
     "tokens": null,
-    "reason": "No tools/list capture or exact baseline was supplied."
+    "reason": "Exact legacy tools/list capture and baseline unavailable."
   },
   "anthropic_count_tokens": null,
   "fixture_sha256": "4709ae15be68b75cb47eec6f034ee678aff5da205dfbfd7b16b5bc807e7fd6d3",

@@ -11,7 +11,8 @@ export async function verifyCli(jar: string): Promise<void> {
   if (hash !== CLI_PIN.jar_sha256) throw new Error('Official jadx CLI JAR checksum mismatch');
 }
 /** Fixed command/flags; inputs never enter a shell or supply executable CLI flags. */
-export async function runCli(options: CliOptions, root: string, input: string, format: 'java'|'json'): Promise<{ code: number; diagnostics: string }> {
+export async function runCli(options: CliOptions, root: string, input: string, format: 'java'|'json', signal?: AbortSignal): Promise<{ code: number; diagnostics: string }> {
+  signal?.throwIfAborted();
   const out = join(root, format);
   await mkdir(out, { recursive: true });
   const env: NodeJS.ProcessEnv = {
@@ -26,13 +27,17 @@ export async function runCli(options: CliOptions, root: string, input: string, f
   if (format === 'json') args.push('--call-graph','json');
   args.push(input);
   return new Promise((resolve, reject) => {
+    signal?.throwIfAborted();
     const child=spawn(options.java ?? 'java',args,{cwd:root,env,stdio:['ignore','pipe','pipe'],shell:false});
     const buffers: Buffer[]=[]; let bytes=0; let timedOut=false;
     const capture=(b: Buffer) => { const remaining=65536-bytes; if(remaining>0) { buffers.push(b.subarray(0,remaining)); bytes+=Math.min(b.length,remaining); } };
     child.stdout.on('data',capture);child.stderr.on('data',capture);
+    const abort=()=>{child.kill('SIGKILL');};
+    signal?.addEventListener('abort',abort,{once:true});
+    const cleanup=()=>{clearTimeout(timer);signal?.removeEventListener('abort',abort);};
     const timer=setTimeout(()=>{timedOut=true;child.kill('SIGKILL');},options.timeoutMs);
-    child.once('error',error=>{clearTimeout(timer);reject(error);});
-    child.once('close',code=>{clearTimeout(timer);if(timedOut) reject(new Error('jadx CLI timed out'));else resolve({code:code ?? -1,diagnostics:Buffer.concat(buffers).toString('utf8')});});
+    child.once('error',error=>{cleanup();reject(error);});
+    child.once('close',code=>{cleanup();if(signal?.aborted) reject(new Error('jadx CLI cancelled'));else if(timedOut) reject(new Error('jadx CLI timed out'));else resolve({code:code ?? -1,diagnostics:Buffer.concat(buffers).toString('utf8')});});
   });
 }
 export async function boundedFile(path: string, limit: number): Promise<Buffer> {

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: AGPL-3.0-only
-"""Local cl100k_base counts; not Anthropic API counts. No original baseline supplied."""
+"""Local cl100k_base counts; not Anthropic API counts. Exact legacy baseline unavailable."""
 import hashlib,json,pathlib,tiktoken
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/'docs/measurements';OUT.mkdir(parents=True,exist_ok=True)
@@ -21,7 +21,7 @@ result={'tokenizer':'tiktoken 0.12.0 / cl100k_base; not Anthropic API counts','f
     'typescript':toolsize(capture('ts-tools-list')),'rea':toolsize(capture('rea-tools-list')),
     'introspect_summary':size(capture('ts-introspect')),'all_operation_details':size(capture('ts-operation-details')),
     'class_summary_full':size(capture('ts-summary-full')),'class_summary_projected':size(capture('ts-summary-projected')),
-    'original_baseline':{'tools_approx':25,'chars':None,'tokens':None,'reason':'No tools/list capture or exact baseline was supplied.'},
+    'original_baseline':{'tools_approx':25,'chars':None,'tokens':None,'reason':'Exact legacy tools/list capture and baseline unavailable.'},
     'anthropic_count_tokens':None,
     'fixture_sha256':hashlib.sha256((ROOT/'build/fixture/small.apk').read_bytes()).hexdigest()}
 result['rea_to_typescript_char_reduction_percent']=100*(1-result['typescript']['chars']/result['rea']['chars'])

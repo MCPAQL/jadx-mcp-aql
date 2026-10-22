@@ -24,11 +24,12 @@ jobs:
       - name: Run every compiled test with networking disabled
         run: |
           source .tools/env.sh
-          sudo env "JAVA_HOME=$JAVA_HOME" "PATH=$PATH" unshare -n bash scripts/run-compiled-tests.sh
+          sudo env "JAVA_HOME=$JAVA_HOME" "PATH=$PATH" unshare -n runuser -u "$(id -un)" -- env "JAVA_HOME=$JAVA_HOME" "PATH=$PATH" bash scripts/run-compiled-tests.sh
       - name: Compare two clean JAR builds
         run: |
           source .tools/env.sh
           python3 scripts/reproducible-build.py
+          python3 scripts/reproducible-npm.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: verified-build

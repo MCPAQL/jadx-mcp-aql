@@ -43,16 +43,31 @@ export class Adapter {
   private session?:Session;
   private queue:Promise<unknown>=Promise.resolve();
   private options:CliOptions;
-  constructor(options:Partial<CliOptions>&Pick<CliOptions,'jar'>){this.options={timeoutMs:90000,threads:1,...options};}
-  async close():Promise<void>{await this.queue;await this.unload();}
+  private allowedRoots:string[];
+  private stopping=false;
+  private cancellation=new AbortController();
+  constructor(options:Partial<CliOptions>&Pick<CliOptions,'jar'>&{allowedRoots?:string[]}){
+    this.options={timeoutMs:90000,threads:1,...options};
+    this.allowedRoots=(options.allowedRoots??[process.cwd()]).map(root=>resolve(root));
+    if(!this.allowedRoots.length)throw new Error('At least one allowed root is required');
+  }
+  async close():Promise<void>{this.stopping=true;this.cancellation.abort();await this.queue;await this.unload();}
+  private async requireAllowed(path:string):Promise<void>{
+    for(const configured of this.allowedRoots){
+      const root=await realpath(configured),rel=relative(root,path);
+      if(!isAbsolute(rel)&&rel!=='..'&&!rel.startsWith('../')&&!rel.startsWith('..\\'))return;
+    }
+    throw new AqlError('FORBIDDEN_PATH','Path is outside the operator-configured allowed roots');
+  }
   call(endpoint:string,operation:string,params:Params={}):Promise<unknown>{
     const next=this.queue.then(()=>this.handle(endpoint,operation,params));this.queue=next.catch(()=>{});return next;
   }
   private async handle(endpoint:string,operation:string,p:Params):Promise<unknown>{
     try {
+      if(this.stopping)throw new AqlError('SERVER_CLOSING','Server is closing');
       if(!tools.some(t=>t.name===endpoint))throw new AqlError('VALIDATION_ENDPOINT','Unknown endpoint');
       if(operation==='introspect')return {success:true,data:introspect(p)};
-      const def=operations[operation];if(!def)throw new AqlError('NOT_FOUND_OPERATION',`Unknown operation: ${operation}`);
+      const def=Object.hasOwn(operations,operation)?operations[operation]:undefined;if(!def)throw new AqlError('NOT_FOUND_OPERATION',`Unknown operation: ${operation}`);
       if(endpoint!==`mcp_aql_${def.category}`)throw new AqlError('VALIDATION_ENDPOINT_MISMATCH',`${operation} belongs to mcp_aql_${def.category}`,{expected_endpoint:`mcp_aql_${def.category}`,actual_endpoint:endpoint});
       for(const [key,spec] of Object.entries(def.parameters)){
         const value=p[key];if(value===undefined){if(spec.required)throw new AqlError('VALIDATION_MISSING_PARAM',`${key} is required`);continue;}
@@ -69,7 +84,7 @@ export class Adapter {
   private status(){return {state:this.session?'LOADED':'UNLOADED',cli_version:CLI_PIN.version,...(this.session?{apk_path:this.session.path,class_count:this.session.classes.filter(c=>!c.inner).length,decompile_errors:this.session.partial}:{}),capabilities:{raw_smali:false,complete_use_inventory:false,xrefs:'method_call_graph',metadata:'cli_mapping'}};}
   private async unload(){const old=this.session;this.session=undefined;if(old)await rm(old.dir,{recursive:true,force:true});return {unloaded:!!old};}
   private async load(path:string){
-    const input=await realpath(path);const file=await stat(input);
+    const input=await realpath(path);await this.requireAllowed(input);const file=await stat(input);
     if(!file.isFile()||file.size>512*1024*1024)throw new Error('Input must be a regular file no larger than 512 MiB');
     if(!['.apk','.dex','.jar','.class','.xapk'].includes(extname(input).toLowerCase()))throw new Error('Supported input extensions: apk, dex, jar, class, xapk');
     await verifyCli(this.options.jar);
@@ -78,7 +93,7 @@ export class Adapter {
       // The CLI writes only to this owned cache; the immutable input remains in place.
       let partial=false;
       for(const format of ['json','java'] as const){
-        const run=await runCli(this.options,dir,input,format);partial ||= run.code!==0;
+        const run=await runCli(this.options,dir,input,format,this.cancellation.signal);partial ||= run.code!==0;
         // JADX returns an error count for individual malformed methods while emitting useful output.
         if(run.code<0||run.code>=128)throw new Error(`jadx exited ${run.code}: ${run.diagnostics.slice(0,1024)}`);
         const names=await files(join(dir,format));let total=0;
@@ -163,6 +178,7 @@ export class Adapter {
     }
     if(operation==='export_sources'){
       const output=resolve(string(p,'output_dir')),dir=join(await realpath(dirname(output)),output.split(/[\\/]/).at(-1)!);
+      await this.requireAllowed(dir);
       await mkdir(dir);const sources=await files(join(s.dir,'java/sources'));
       const exported:string[]=[];for(const [i,name] of sources.filter(n=>n.endsWith('.java')).entries()){const dest=`${String(i).padStart(6,'0')}.java`;await copyFile(safePath(join(s.dir,'java/sources'),name),join(dir,dest),constants.COPYFILE_EXCL);exported.push(dest);}
       return {output_dir:dir,files:exported,count:exported.length};

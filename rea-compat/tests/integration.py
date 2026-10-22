@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Drive the unmodified REA 6.5.0 Java source launcher and the standalone MCP face."""
+# SPDX-License-Identifier: AGPL-3.0-only
+"""Drive the unmodified REA 6.5.0 Java source launcher against the compatibility shim."""
 import hashlib, json, os, pathlib, queue, subprocess, tempfile, threading, time, unittest, zipfile
 ROOT=pathlib.Path(__file__).resolve().parents[2]
 JAVA=str(pathlib.Path(os.environ['JAVA_HOME'])/'bin/java')
@@ -14,7 +15,7 @@ class Client:
         self.tmp=tempfile.TemporaryDirectory(prefix='jadx-compat-test-')
         cmd=[JAVA,'-Xmx1g','-XX:ActiveProcessorCount=2']
         cmd+=['--class-path',str(JAR),str(ROOT/'rea-compat/tests/vendor/ReaJadxBridge.java')]
-        self.p=subprocess.Popen(cmd,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,cwd=self.tmp.name)
+        self.p=subprocess.Popen(cmd,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,cwd=self.tmp.name,env=dict(os.environ,JADX_ALLOWED_ROOTS=str(ROOT)))
         self.q=queue.Queue();self.stderr=bytearray();self.ident=0;self.max_frame=0
         def stdout():
             for line in self.p.stdout:
@@ -83,6 +84,10 @@ class ContractTest(unittest.TestCase):
             self.assertLess(sum(46+len(i.filename.encode())+len(i.extra)+len(i.comment) for i in z.infolist()),8*1024*1024)
             self.assertFalse(any('/MainKt.class' in n or '/Operations.class' in n for n in z.namelist()))
             self.assertNotIn('Main-Class:',z.read('META-INF/MANIFEST.MF').decode())
+            notice=(ROOT/'NOTICE').read_bytes()
+            self.assertEqual(z.read('META-INF/NOTICE'),notice)
+            self.assertIn((ROOT/'third-party/jadx-1.5.6/NOTICE').read_bytes(),notice)
+            self.assertIn(b'jadx-headless-mcp authors',notice)
     def test_load_replace_and_unknown_args(self):
         self.assertEqual(self.loaded['apk_path'],APK);self.assertEqual(self.loaded['threads'],1);self.assertEqual(self.loaded['resources'],'full')
         listed=payload(self.client.tool('list_classes',{'offset':0,'limit':4096,'unknown':True}));self.assertEqual(listed['total'],self.loaded['class_count'])

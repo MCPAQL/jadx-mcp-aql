@@ -38,8 +38,9 @@ class JadxSession(val path: String, initialConfig: SessionConfig) : Closeable {
     private val resources: List<ResourceFile>
     init {
         require(File(path).isFile && File(path).canRead()) { "not a readable file: $path" }
+        val input = InputPaths.requireAllowed(Path.of(path))
         val args = JadxArgs().apply {
-            inputFiles = listOf(prepareInput(path)); threadsCount = if (config.threads == 0) Runtime.getRuntime().availableProcessors() else config.threads
+            inputFiles = listOf(prepareInput(input.toString())); threadsCount = if (config.threads == 0) Runtime.getRuntime().availableProcessors() else config.threads
             isSkipResources = config.resourceMode == ResourceMode.NONE
             isSkipFilesSave = true
             codeCache = cache

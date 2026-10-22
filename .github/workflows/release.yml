@@ -4,19 +4,21 @@ on:
   push:
     tags: ['v*']
 permissions:
-  contents: write
-  id-token: write
-  attestations: write
+  contents: read
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
-  release:
+  build:
     runs-on: ubuntu-24.04
-    environment: release
+    timeout-minutes: 30
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '24.16.0'
-          registry-url: https://registry.npmjs.org
       - name: Verify tag and build tools
         run: |
           node -e 'const p=require("./packages/jadx-aql/package.json"); if(process.env.GITHUB_REF_NAME!=="v"+p.version)process.exit(1)'
@@ -29,8 +31,9 @@ jobs:
           npm run build
           .tools/gradle-8.14.3/bin/gradle --no-daemon build :rea-compat:testClasspath
           npm test
-          sudo env "JAVA_HOME=$JAVA_HOME" "PATH=$PATH" unshare -n bash scripts/run-compiled-tests.sh
+          sudo env "JAVA_HOME=$JAVA_HOME" "PATH=$PATH" unshare -n runuser -u "$(id -un)" -- env "JAVA_HOME=$JAVA_HOME" "PATH=$PATH" bash scripts/run-compiled-tests.sh
           python3 scripts/reproducible-build.py
+          python3 scripts/reproducible-npm.py
       - name: Package release artifacts and checksums
         run: |
           mkdir artifacts
@@ -38,6 +41,32 @@ jobs:
           npm pack --workspace @mcpaql/jadx-aql --pack-destination artifacts
           cd artifacts
           sha256sum rea-compat.jar *.tgz > SHA256SUMS
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: release-artifacts
+          path: artifacts/*
+          if-no-files-found: error
+  publish:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: release
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.16.0'
+          registry-url: https://registry.npmjs.org
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: release-artifacts
+          path: artifacts
+      - name: Verify release artifact checksums
+        run: cd artifacts && sha256sum -c SHA256SUMS
       - name: Attest release artifact provenance with Sigstore
         id: provenance
         uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # v3

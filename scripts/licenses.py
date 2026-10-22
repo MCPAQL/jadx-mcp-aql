@@ -78,6 +78,24 @@ Component | Scope | Licence(s) declared by its publisher
 for row in rows:
     text+=row['coordinate']+' | '+row['scope']+' | '+'; '.join(x['name']+((' ('+x['url']+')') if x['url'] else '') for x in row['licenses'])+'\n'
 text+='\nHashes and source licence metadata are recorded in docs/dependencies.json,\npackage-lock.json, and gradle/verification-metadata.xml. Dependency JAR legal\nnotices are retained under META-INF/dependency-notices in the shim JAR.\n'
+text+='''
+Interoperability attribution
+===========================
+jadx-headless-mcp v0.7.1 (https://github.com/1013503897/jadx-headless-mcp)
+Copyright the jadx-headless-mcp authors. Licensed under Apache-2.0; the
+unmodified licence is retained in third-party/jadx-headless-mcp-0.7.1/LICENSE.
+
+The com.atxx.jhmcp package, compatibility version 0.7.1, file names and API
+identifiers reimplement the public jadx-headless-mcp interface so REA 6.5.0
+can interoperate. The truncation message is byte-identical because REA parses
+that output format. This is an independent interface implementation; no
+upstream implementation code is included. Attribution does not change the
+AGPL-3.0-only licence of this project's original code.
+
+JADX 1.5.6 upstream NOTICE (reproduced verbatim)
+=============================================
+'''
+text+=(ROOT/'third-party/jadx-1.5.6/NOTICE').read_text()
 (ROOT/'NOTICE').write_text(text)
 for name in ['LICENSE','NOTICE']:(ROOT/'packages/jadx-aql'/name).write_bytes((ROOT/name).read_bytes())
 print('Recorded',len(rows),'dependency components with publisher-declared licences.')

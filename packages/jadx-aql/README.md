@@ -38,11 +38,17 @@ and binary-XML encoder. No third-party APKs are downloaded or executed.
 ```sh
 node packages/jadx-aql/dist/server.js \
   --jadx-jar "$PWD/.tools/jadx-1.5.6/lib/jadx-1.5.6-all.jar" \
-  --java "$JAVA_HOME/bin/java"
+  --java "$JAVA_HOME/bin/java" \
+  --allow-root /path/to/apk-and-export-directory
 ```
 
 The installed npm command is `jadx-aql`. `JADX_CLI_JAR` and `JADX_JAVA` can supply
-the same paths. The JAR is verified against the official release's pinned hash
+the same paths. Input and export paths must be beneath an operator-configured
+allowed directory. Without `--allow-root`, only the launch directory is allowed;
+repeat `--allow-root` to authorize additional existing directories. Canonical
+paths are checked, so symlinks cannot escape those roots. Tool arguments cannot
+change the allow-list. The Java executable is trusted operator configuration;
+use an absolute `--java` path when PATH is not trusted. The JAR is verified against the official release's pinned hash
 before any input is loaded. It is not bundled in the npm package.
 
 Five CRUDE tools accept `{operation, params}`. Start with:
@@ -71,7 +77,8 @@ properties. Pages default to 200 items and are capped at 4096. Text is limited t
 
 Loading runs the CLI twice, for its JSON metadata/call graph and exact Java source,
 into a private temporary cache. Later reads consume that cache. Session replacement
-and unload remove it. `export_sources` copies cached Java into a new caller-chosen
+and unload remove it. SIGINT, SIGTERM and SIGHUP cancel an active CLI load and
+remove the session/partial cache before exit. `export_sources` copies cached Java into a new caller-chosen
 directory; it refuses an existing destination. The adapter never executes APK code.
 Inputs are limited to APK, DEX, JAR, class and XAPK files, at most 512 MiB.
 Each CLI subprocess has a timeout, bounded captured diagnostics, isolated config,
@@ -96,10 +103,15 @@ REA replaces with its own handlers. There is no JAR entry point.
 REA 6.5.0 test bridge, MIT licence and hash provenance are in
 `rea-compat/tests/vendor`. The shim intentionally supports APK/DEX and XAPK-base
 loading; general JAR/class analysis belongs to the TypeScript CLI adapter.
+The shim confines input to its working directory by default (the directory
+containing the target in the standard bridge launch). Operators can set
+`JADX_ALLOWED_ROOTS` to an explicit list of existing directories separated by
+the platform path separator. Symlink escapes and other file extensions are
+rejected.
 
 ## Verify this build
 
-The release workflow builds the shim twice from clean source trees in different
+The release workflow builds the shim and npm tarball twice from clean source trees in different
 paths using the pinned JDK, then compares SHA-256. Gradle enforces committed
 version locks and dependency verification metadata. Archive timestamps are
 normalized, entry order is reproducible, `SOURCE_DATE_EPOCH` is pinned, and the
@@ -110,6 +122,7 @@ Run the same comparison locally after resolving build dependencies:
 ```sh
 source .tools/env.sh
 python3 scripts/reproducible-build.py
+python3 scripts/reproducible-npm.py
 ```
 
 Release artifacts include `rea-compat.jar`, the npm tarball, `SHA256SUMS`, and a
@@ -151,6 +164,8 @@ python3 -m venv .tools/tokenizer
 .tools/tokenizer/bin/python scripts/measure.py
 ```
 
-Counts use `cl100k_base`, not Anthropic's API. No exact legacy tools/list baseline
-was supplied; that comparison is recorded as unavailable. See
+Counts use `cl100k_base`, not Anthropic's API. An exact legacy tools/list baseline is unavailable; the comparison is recorded
+as unmeasured. See
 `docs/validation.md` for the measured results and test scope.
+
+Publication and first-release prerequisites are documented in the source repository’s `RELEASING.md`.

@@ -1,0 +1,129 @@
+SPDX-License-Identifier: AGPL-3.0-only
+jadx-aql/
+├── .gitattributes
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       └── release.yml
+├── .gitignore
+├── .source-date-epoch
+├── .source-date-epoch.license
+├── LICENSE
+├── NOTICE
+├── README.md
+├── build.gradle.kts
+├── docs/
+│   ├── artifact.sha256
+│   ├── artifact.sha256.license
+│   ├── dependencies.json
+│   ├── dependencies.json.license
+│   ├── file-tree.txt
+│   ├── measurements/
+│   │   ├── footprint.json
+│   │   ├── footprint.json.license
+│   │   ├── rea-tools-list.json
+│   │   ├── rea-tools-list.json.license
+│   │   ├── ts-introspect.json
+│   │   ├── ts-introspect.json.license
+│   │   ├── ts-operation-details.json
+│   │   ├── ts-operation-details.json.license
+│   │   ├── ts-summary-full.json
+│   │   ├── ts-summary-full.json.license
+│   │   ├── ts-summary-projected.json
+│   │   ├── ts-summary-projected.json.license
+│   │   ├── ts-tools-list.json
+│   │   └── ts-tools-list.json.license
+│   ├── reproducibility.json
+│   ├── reproducibility.json.license
+│   ├── validation.json
+│   ├── validation.json.license
+│   └── validation.md
+├── gradle.properties
+├── gradle/
+│   ├── verification-metadata.xml
+│   ├── verification-metadata.xml.license
+│   └── wrapper/
+│       ├── gradle-wrapper.jar
+│       ├── gradle-wrapper.properties
+│       └── gradle-wrapper.properties.license
+├── gradlew
+├── gradlew.bat
+├── package-lock.json
+├── package-lock.json.license
+├── package.json
+├── package.json.license
+├── packages/
+│   └── jadx-aql/
+│       ├── LICENSE
+│       ├── NOTICE
+│       ├── README.md
+│       ├── package.json
+│       ├── package.json.license
+│       ├── src/
+│       │   ├── adapter.ts
+│       │   ├── catalogue.ts
+│       │   ├── cli.ts
+│       │   ├── manifest.ts
+│       │   ├── pin.ts
+│       │   └── server.ts
+│       ├── test/
+│       │   ├── adapter.test.mjs
+│       │   └── stdio.test.mjs
+│       ├── tsconfig.json
+│       └── tsconfig.json.license
+├── rea-compat/
+│   ├── build.gradle.kts
+│   ├── gradle.lockfile
+│   ├── gradle.lockfile.license
+│   ├── src/
+│   │   ├── main/
+│   │   │   └── kotlin/
+│   │   │       └── com/
+│   │   │           └── atxx/
+│   │   │               └── jhmcp/
+│   │   │                   ├── ClassTools.kt
+│   │   │                   ├── JadxSession.kt
+│   │   │                   ├── ManifestTools.kt
+│   │   │                   ├── MethodTools.kt
+│   │   │                   ├── SessionConfig.kt
+│   │   │                   ├── SessionHolder.kt
+│   │   │                   ├── SessionTools.kt
+│   │   │                   ├── TextUtil.kt
+│   │   │                   ├── Tools.kt
+│   │   │                   └── XrefTools.kt
+│   │   └── test/
+│   │       └── kotlin/
+│   │           └── org/
+│   │               └── mcpaql/
+│   │                   └── ShimTest.kt
+│   └── tests/
+│       ├── fixture/
+│       │   ├── AndroidManifest.xml
+│       │   ├── Caller.smali
+│       │   ├── Fixture$Inner.smali
+│       │   ├── Fixture.smali
+│       │   ├── FixtureAssembler.java
+│       │   └── res/
+│       │       └── values/
+│       │           └── strings.xml
+│       ├── integration.py
+│       └── vendor/
+│           ├── REA-LICENSE
+│           ├── ReaJadxBridge.java
+│           ├── provenance.json
+│           └── provenance.json.license
+├── scripts/
+│   ├── assert-network-denied.py
+│   ├── bootstrap.py
+│   ├── build-fixture.py
+│   ├── capture.mjs
+│   ├── license-dist.mjs
+│   ├── licenses.py
+│   ├── measure.py
+│   ├── no-network.sb
+│   ├── reproducible-build.py
+│   ├── run-compiled-tests.sh
+│   └── test-no-network.sh
+├── settings.gradle.kts
+├── toolchain.lock.json
+└── toolchain.lock.json.license

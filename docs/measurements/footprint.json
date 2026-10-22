@@ -1,0 +1,50 @@
+{
+  "tokenizer": "tiktoken 0.12.0 / cl100k_base; not Anthropic API counts",
+  "format": "minified tools/list result, no JSON-RPC envelope or trailing newline",
+  "typescript": {
+    "chars": 1702,
+    "utf8_bytes": 1702,
+    "tokens_cl100k_base": 365,
+    "tools": 5,
+    "description_char_share": 0.2520564042303173,
+    "schema_char_share": 0.33490011750881316
+  },
+  "rea": {
+    "chars": 2556,
+    "utf8_bytes": 2556,
+    "tokens_cl100k_base": 545,
+    "tools": 9,
+    "description_char_share": 0.2965571205007825,
+    "schema_char_share": 0.4984350547730829
+  },
+  "introspect_summary": {
+    "chars": 2682,
+    "utf8_bytes": 2682,
+    "tokens_cl100k_base": 545
+  },
+  "all_operation_details": {
+    "chars": 10840,
+    "utf8_bytes": 10840,
+    "tokens_cl100k_base": 2496
+  },
+  "class_summary_full": {
+    "chars": 1275,
+    "utf8_bytes": 1275,
+    "tokens_cl100k_base": 307
+  },
+  "class_summary_projected": {
+    "chars": 137,
+    "utf8_bytes": 137,
+    "tokens_cl100k_base": 35
+  },
+  "original_baseline": {
+    "tools_approx": 25,
+    "chars": null,
+    "tokens": null,
+    "reason": "No tools/list capture or exact baseline was supplied."
+  },
+  "anthropic_count_tokens": null,
+  "fixture_sha256": "4709ae15be68b75cb47eec6f034ee678aff5da205dfbfd7b16b5bc807e7fd6d3",
+  "rea_to_typescript_char_reduction_percent": 33.411580594679194,
+  "rea_to_typescript_token_reduction_percent": 33.02752293577982
+}

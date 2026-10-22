@@ -1,0 +1,9 @@
+{
+  "package": "rea-agents",
+  "version": "6.5.0",
+  "source": "https://registry.npmjs.org/rea-agents/-/rea-agents-6.5.0.tgz",
+  "npm_integrity": "sha512-C6BG7LyrAdR74mSjertM6PrxJkcNZ2bfQNOJornPo9erDEp2tyPRVYPnV5Yodr+1RqewCQla68WulXlVnveD+A==",
+  "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+  "license": "MIT",
+  "modified": false
+}

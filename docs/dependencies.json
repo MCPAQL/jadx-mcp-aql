@@ -1,0 +1,3201 @@
+[
+  {
+    "ecosystem": "maven",
+    "coordinate": "antlr:antlr:2.7.7",
+    "scope": "official-cli-bundle",
+    "sha256": "88fbda4b912596b9f56e8e12e580cc954bacfb51776ecfddd3e18fc1cf56dc4c",
+    "licenses": [
+      {
+        "name": "ANTLR-PD AND BSD-3-Clause (Python code generator included in the JAR)",
+        "url": "https://www.antlr2.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "antlr:antlr:2.7.7",
+    "scope": "test",
+    "sha256": "88fbda4b912596b9f56e8e12e580cc954bacfb51776ecfddd3e18fc1cf56dc4c",
+    "licenses": [
+      {
+        "name": "ANTLR-PD AND BSD-3-Clause (Python code generator included in the JAR)",
+        "url": "https://www.antlr2.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "ch.qos.logback:logback-classic:1.5.38",
+    "scope": "official-cli-bundle",
+    "sha256": "afb439c61fa287c9e1925523b13baab03617e724406a389d48b61c2c3e46b700",
+    "licenses": [
+      {
+        "name": "EPL-2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      },
+      {
+        "name": "LGPL-2.1-only",
+        "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "ch.qos.logback:logback-core:1.5.38",
+    "scope": "official-cli-bundle",
+    "sha256": "a855a0fc97b1d06f4efb1c3bba5ebd0eb508d8b58e68e89e4bbc23a85135c883",
+    "licenses": [
+      {
+        "name": "EPL-2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      },
+      {
+        "name": "LGPL-2.1-only",
+        "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.build:aapt2-proto:9.2.1-15009934",
+    "scope": "official-cli-bundle",
+    "sha256": "2335bab7fd8269ee98d3843410c4a5553d31dd71f9a22f49b21a676d3139c882",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.build:apksig:8.13.1",
+    "scope": "official-cli-bundle",
+    "sha256": "c070ed1394629d74641aa0906f60b2ffa1ee77e6366a1f93437f59717b1aeb89",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.build:bundletool:1.18.3",
+    "scope": "official-cli-bundle",
+    "sha256": "ccad18514fd97db010856b2bbed40f481f8ba9349368c97ae54d72e3567d0171",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.smali:smali-baksmali:3.0.9",
+    "scope": "official-cli-bundle",
+    "sha256": "e7d0166945565a87f3997d1aea8779202dbb6cb0585a39ee20bab8a2f5ba87f6",
+    "licenses": [
+      {
+        "name": "The BSD 3-Clause License",
+        "url": "http://opensource.org/licenses/BSD-3-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.smali:smali-baksmali:3.0.9",
+    "scope": "runtime",
+    "sha256": "e7d0166945565a87f3997d1aea8779202dbb6cb0585a39ee20bab8a2f5ba87f6",
+    "licenses": [
+      {
+        "name": "The BSD 3-Clause License",
+        "url": "http://opensource.org/licenses/BSD-3-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.smali:smali-dexlib2:3.0.9",
+    "scope": "official-cli-bundle",
+    "sha256": "8b547506f62f91d74b70f4beb4989b99e1ff61fc50b2525e9796ca35f0a351dc",
+    "licenses": [
+      {
+        "name": "The BSD 3-Clause License",
+        "url": "http://opensource.org/licenses/BSD-3-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.smali:smali-dexlib2:3.0.9",
+    "scope": "runtime",
+    "sha256": "8b547506f62f91d74b70f4beb4989b99e1ff61fc50b2525e9796ca35f0a351dc",
+    "licenses": [
+      {
+        "name": "The BSD 3-Clause License",
+        "url": "http://opensource.org/licenses/BSD-3-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.smali:smali-util:3.0.9",
+    "scope": "official-cli-bundle",
+    "sha256": "4673762894ba4156081fc5c642f74d6e78aef8b1a9c7702d691e3171d8cc1153",
+    "licenses": [
+      {
+        "name": "The BSD 3-Clause License",
+        "url": "http://opensource.org/licenses/BSD-3-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.smali:smali-util:3.0.9",
+    "scope": "runtime",
+    "sha256": "4673762894ba4156081fc5c642f74d6e78aef8b1a9c7702d691e3171d8cc1153",
+    "licenses": [
+      {
+        "name": "The BSD 3-Clause License",
+        "url": "http://opensource.org/licenses/BSD-3-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.smali:smali:3.0.9",
+    "scope": "official-cli-bundle",
+    "sha256": "98e917b1b1e4f5aa48e74c97fee786645725e9b79e9842e3d7e50f65896553f1",
+    "licenses": [
+      {
+        "name": "The BSD 3-Clause License",
+        "url": "http://opensource.org/licenses/BSD-3-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools.smali:smali:3.0.9",
+    "scope": "test",
+    "sha256": "98e917b1b1e4f5aa48e74c97fee786645725e9b79e9842e3d7e50f65896553f1",
+    "licenses": [
+      {
+        "name": "The BSD 3-Clause License",
+        "url": "http://opensource.org/licenses/BSD-3-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.android.tools:r8:9.1.31",
+    "scope": "official-cli-bundle",
+    "sha256": "3b4de3053885da105e39c15212261d22653d6d1b5eb92323dd04ae913cc8286f",
+    "licenses": [
+      {
+        "name": "BSD-3-Clause",
+        "url": "https://opensource.org/licenses/BSD-3-Clause"
+      },
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      },
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+      },
+      {
+        "name": "BSD",
+        "url": "http://asm.ow2.org/license.html"
+      },
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      },
+      {
+        "name": "The MIT License",
+        "url": "http://opensource.org/licenses/MIT"
+      },
+      {
+        "name": "BSD 3-clause",
+        "url": "https://github.com/protocolbuffers/protobuf/blob/main/LICENSE"
+      },
+      {
+        "name": "BSD",
+        "url": "http://kxml.cvs.sourceforge.net/viewvc/kxml/kxml2/license.txt?view=markup"
+      },
+      {
+        "name": "CDDL 1.1 and GPL 2.0 with Class-path Exception",
+        "url": "https://oss.oracle.com/licenses/CDDL+GPL-1.1"
+      },
+      {
+        "name": "GNU LESSER GENERAL PUBLIC LICENSE 2.1",
+        "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html"
+      },
+      {
+        "name": "Eclipse Distribution License - v 1.0",
+        "url": "http://www.eclipse.org/org/documents/edl-v10.php"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.beust:jcommander:1.64",
+    "scope": "test",
+    "sha256": "156be736199c990321d9ff77090b199629cfc9865e2d6c13f7cd291bb1641817",
+    "licenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.eclipsesource.j2v8:j2v8_linux_x86_64:4.6.0",
+    "scope": "official-cli-bundle",
+    "sha256": "5664ef83b026b061275ef0911016c2c7cbd245eea00d78b44e8e32aa38a710ea",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - v 1.0",
+        "url": "https://www.eclipse.org/legal/epl-v10.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.eclipsesource.j2v8:j2v8_win32_x86_64:4.6.0",
+    "scope": "official-cli-bundle",
+    "sha256": "878c8906838bbfbeb1c7782e022596a2e35371323a0a387bb974a6407378f313",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - v 1.0",
+        "url": "https://www.eclipse.org/legal/epl-v10.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.fifesoft:autocomplete:3.3.2",
+    "scope": "official-cli-bundle",
+    "sha256": "6e7fb86d3f55f69f13a200a4daa6a04e1b753f8fd369da057b4d792adc694350",
+    "licenses": [
+      {
+        "name": "BSD-3-Clause",
+        "url": "https://github.com/bobbylight/AutoComplete/blob/master/LICENSE.md"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.fifesoft:rsyntaxtextarea:3.6.1",
+    "scope": "official-cli-bundle",
+    "sha256": "aaef5bbfc72ed1a6a04a03b8fb37d8d0ba041a5703965d000d540e220d9f1bb5",
+    "licenses": [
+      {
+        "name": "BSD-3-Clause",
+        "url": "https://github.com/bobbylight/RSyntaxTextArea/tree/master/RSyntaxTextArea/src/main/resources/META-INF/LICENSE"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.formdev:flatlaf-extras:3.7",
+    "scope": "official-cli-bundle",
+    "sha256": "2b4356bc08b08a999fac8bfc4fdbb28d59b5735ccf706168bbb4b375aa88e0eb",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.formdev:flatlaf-fonts-inter:4.1",
+    "scope": "official-cli-bundle",
+    "sha256": "053f7274d6489900e53d4ad397323440428733a41b7fe2f642daf3feb7c730e8",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      },
+      {
+        "name": "SIL OPEN FONT LICENSE Version 1.1",
+        "url": "https://choosealicense.com/licenses/ofl-1.1/"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.formdev:flatlaf-fonts-jetbrains-mono:2.304",
+    "scope": "official-cli-bundle",
+    "sha256": "bc8e93479960b2a5e3b45fe724e16439a69f28cc43cac3a2b87b7f7f325fd3a5",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      },
+      {
+        "name": "SIL OPEN FONT LICENSE Version 1.1",
+        "url": "https://choosealicense.com/licenses/ofl-1.1/"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.formdev:flatlaf-intellij-themes:3.7",
+    "scope": "official-cli-bundle",
+    "sha256": "c88c46b7c0379fe9369357d78e00ec2ef04f6878ecac117b405f19e7e5148792",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.formdev:flatlaf:3.7",
+    "scope": "official-cli-bundle",
+    "sha256": "1dc4f08cc0e01122f5bc6cebe1dcf253872c1fe8126208f43dab314d7deb0da2",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.github.akarnokd:rxjava3-swing:3.1.1",
+    "scope": "official-cli-bundle",
+    "sha256": "d87dd3e57617794c48464d65a6fa7790259a99b7a6f59d067a287eddfabd3f0c",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.github.weisj:jsvg:2.0.0",
+    "scope": "official-cli-bundle",
+    "sha256": "81fc9ada579fc3f4924ec35f904c043de13ee8fba280322e638c7092006f1b52",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/weisj/jsvg/blob/master/LICENSE"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.code.findbugs:jsr305:3.0.2",
+    "scope": "official-cli-bundle",
+    "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.code.findbugs:jsr305:3.0.2",
+    "scope": "runtime",
+    "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.code.gson:gson:2.14.0",
+    "scope": "official-cli-bundle",
+    "sha256": "2cbd119bf1961c28788310963dc80ba65f58cdeec1dd139c8bdb1240faa2c36f",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.code.gson:gson:2.14.0",
+    "scope": "runtime",
+    "sha256": "2cbd119bf1961c28788310963dc80ba65f58cdeec1dd139c8bdb1240faa2c36f",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.errorprone:error_prone_annotations:2.48.0",
+    "scope": "official-cli-bundle",
+    "sha256": "b49c5c958316ed67a09c699dda9aa749caf434d51d863dea599ef36a49b9c855",
+    "licenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.errorprone:error_prone_annotations:2.48.0",
+    "scope": "runtime",
+    "sha256": "b49c5c958316ed67a09c699dda9aa749caf434d51d863dea599ef36a49b9c855",
+    "licenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.guava:failureaccess:1.0.3",
+    "scope": "official-cli-bundle",
+    "sha256": "cbfc3906b19b8f55dd7cfd6dfe0aa4532e834250d7f080bd8d211a3e246b59cb",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.guava:failureaccess:1.0.3",
+    "scope": "runtime",
+    "sha256": "cbfc3906b19b8f55dd7cfd6dfe0aa4532e834250d7f080bd8d211a3e246b59cb",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.guava:guava:33.6.0-jre",
+    "scope": "official-cli-bundle",
+    "sha256": "dc573e1fca4fd5454f4a5fd3d7da2df03002876a4175bafc14a95980dd7713b3",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.guava:guava:33.6.0-jre",
+    "scope": "runtime",
+    "sha256": "dc573e1fca4fd5454f4a5fd3d7da2df03002876a4175bafc14a95980dd7713b3",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+    "scope": "official-cli-bundle",
+    "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+    "scope": "runtime",
+    "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.j2objc:j2objc-annotations:3.1",
+    "scope": "official-cli-bundle",
+    "sha256": "84d3a150518485f8140ea99b8a985656749629f6433c92b80c75b36aba3b099b",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.j2objc:j2objc-annotations:3.1",
+    "scope": "runtime",
+    "sha256": "84d3a150518485f8140ea99b8a985656749629f6433c92b80c75b36aba3b099b",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.google.protobuf:protobuf-java:3.25.5",
+    "scope": "official-cli-bundle",
+    "sha256": "8540247fad9e06baefa8fb45eb313802d019f485f14300e0f9d6b556ed88e753",
+    "licenses": [
+      {
+        "name": "BSD-3-Clause",
+        "url": "https://opensource.org/licenses/BSD-3-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.jakewharton.android.repackaged:dalvik-dx:16.0.1",
+    "scope": "official-cli-bundle",
+    "sha256": "1e4b645628e3bdb097b5331d669e177ef235a551582a8c646dbe36865e541907",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.twelvemonkeys.common:common-image:3.12.0",
+    "scope": "official-cli-bundle",
+    "sha256": "62a3821c724fadfda346c1e2d83b0c506a0c4074be269a52bf4e3192c7dd92bc",
+    "licenses": [
+      {
+        "name": "The BSD License",
+        "url": "https://github.com/haraldk/TwelveMonkeys#license"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.twelvemonkeys.common:common-io:3.12.0",
+    "scope": "official-cli-bundle",
+    "sha256": "bfacfeb02acac47dbfd1fab0002eaeca65547d04249498b654320c9e0fdf6647",
+    "licenses": [
+      {
+        "name": "The BSD License",
+        "url": "https://github.com/haraldk/TwelveMonkeys#license"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.twelvemonkeys.common:common-lang:3.12.0",
+    "scope": "official-cli-bundle",
+    "sha256": "5c65e504b5b64d80683e0fa70a1dd154dd83d4de7da37f21e950f5a9c03bc66d",
+    "licenses": [
+      {
+        "name": "The BSD License",
+        "url": "https://github.com/haraldk/TwelveMonkeys#license"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.twelvemonkeys.imageio:imageio-core:3.12.0",
+    "scope": "official-cli-bundle",
+    "sha256": "34c6f91bf3b217ed0115bce8283238fbd0264562aa682b4226a3960d0ede9815",
+    "licenses": [
+      {
+        "name": "The BSD License",
+        "url": "https://github.com/haraldk/TwelveMonkeys#license"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.twelvemonkeys.imageio:imageio-metadata:3.12.0",
+    "scope": "official-cli-bundle",
+    "sha256": "797d026b67d07e6d5eb00a1ab53a55acaab6f80a71c5ee325572093eb90c0caa",
+    "licenses": [
+      {
+        "name": "The BSD License",
+        "url": "https://github.com/haraldk/TwelveMonkeys#license"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.twelvemonkeys.imageio:imageio-webp:3.12.0",
+    "scope": "official-cli-bundle",
+    "sha256": "43dc447ccfe34c5c5c6f5d31190270e1f9bf65f60375d697ae2a8ff433468526",
+    "licenses": [
+      {
+        "name": "The BSD License",
+        "url": "https://github.com/haraldk/TwelveMonkeys#license"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "com.typesafe:config:1.4.9",
+    "scope": "runtime",
+    "sha256": "47d13e3196c84f2a8ccd014ae563738c3da5b7406b38e03505ec0601a2f4fc37",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "commons-io:commons-io:2.22.0",
+    "scope": "official-cli-bundle",
+    "sha256": "2b9a7b1f726fb86216dbd2c8321eabe0221dbd5b1be81c18e1cb53811b104758",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "guru.nidi.com.kitfox:svgSalamander:1.1.3",
+    "scope": "official-cli-bundle",
+    "sha256": "ad12ea694ebec5b50b10322e72b7e2cfb6d1689f5ba0bcd58b08f02c1f50c765",
+    "licenses": [
+      {
+        "name": "BSD License",
+        "url": "https://opensource.org/licenses/BSD-2-Clause"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "guru.nidi:graphviz-java:0.18.1",
+    "scope": "official-cli-bundle",
+    "sha256": "cbface357ab9c27cc8926ae8653de48a0880ca5d3532b53a06c0dec2f6e02921",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "hu.kazocsaba:image-viewer:1.2.3",
+    "scope": "official-cli-bundle",
+    "sha256": "c2a34b75d2caf1a95f8cc19719a9ba30d1096618bdb087b3db6ffc10bac05229",
+    "licenses": [
+      {
+        "name": "The MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.get-coursier.jniutils:windows-jni-utils:0.3.3",
+    "scope": "official-cli-bundle",
+    "sha256": "ab68efcf162355e20007b238d8108b7ffec0c06b467ee44cbb44ec3f8ac3a7e6",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://spdx.org/licenses/Apache-2.0.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.get-coursier.util:directories-jni:0.1.4",
+    "scope": "official-cli-bundle",
+    "sha256": "d42a03703e94c17518ef0c36a295a4aef03e977b5b4d8d7c276fe4ab17387c76",
+    "licenses": [
+      {
+        "name": "MPL-2.0",
+        "url": "https://spdx.org/licenses/MPL-2.0.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.get-coursier.util:directories:0.1.4",
+    "scope": "official-cli-bundle",
+    "sha256": "8fcced97ce6a4126841bbfe3fd1905c0857df17a8261606477ded16404ecb218",
+    "licenses": [
+      {
+        "name": "MPL-2.0",
+        "url": "https://spdx.org/licenses/MPL-2.0.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.oshai:kotlin-logging-jvm:7.0.13",
+    "scope": "official-cli-bundle",
+    "sha256": "c373f7f4c9efc85c4f70f11519f2a1b7878bc0ed75a325364d034af3fa21f776",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.oshai:kotlin-logging-jvm:8.0.4",
+    "scope": "runtime",
+    "sha256": "0bbac3f9dac5067b40d02fe461a053782bc8d3ef5162a923581b369adef7e02d",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-aab-input:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "0b57accea3f68074446e8cf3fe4b1a9eaad218080b08423b71f45d06abd1cecb",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-analysis:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "daa6247c0e1f41bced5f93c572a8346cd00d3348b4f9e41c1f3ebc9a36ec909b",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-apkm-input:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "0974067cce045bd029ddd53e71f1057b20b16da48d07f78ddc72f267aa3338e2",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-apks-input:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "effd60416d485111a2caafabe5b3561fba417c00504e378901a6591c5a7fbef2",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-app-commons:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "55ab4d117feeefc53496fe998b5ee8a7d01efcb67590c63809424522ce670925",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-cli:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "98006010cf577e90615ad6fd769840a90ba4f91351563c1f08190e727a84f360",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-core:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "81237e3cc6eff6265643a08fa24caabb1ce614e4ed05daf8cfc18c906229c048",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-core:1.5.6",
+    "scope": "runtime",
+    "sha256": "81237e3cc6eff6265643a08fa24caabb1ce614e4ed05daf8cfc18c906229c048",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-dex-input:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "3b6adf6a38a9db2b480a28d8675124907073fb22d691556e96afde12a864c627",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-dex-input:1.5.6",
+    "scope": "runtime",
+    "sha256": "3b6adf6a38a9db2b480a28d8675124907073fb22d691556e96afde12a864c627",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-gui:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "202a45be4d708ed6c22a2b4a7f7f97d82de7cce5badc94d5909c1469dc08277f",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-input-api:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "3fbb2e70c6dcc4f02a39d9185560f779fd1042e053af903eb4b764baf58173ef",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-input-api:1.5.6",
+    "scope": "runtime",
+    "sha256": "3fbb2e70c6dcc4f02a39d9185560f779fd1042e053af903eb4b764baf58173ef",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-java-convert:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "8a15af67ad4c6f1707d70fdae912499cd08f71434d21872ef2eedb85135e04f7",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-java-input:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "66af48ff1fad9febd19f945a8c11a077df99ce1e7f2ec2ffec1a797d06ab7584",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-kotlin-metadata:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "11ceb5f417f002d267a4db000f6dc058dfae2dde078e2da693e7e6f731abb058",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-kotlin-source-debug-extension:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "2ecafe67bbb8f79855b8722690c35484834442c913c1f8f813d17afaab52f798",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-plugins-tools:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "526855edaed632ad7597c35fc35669f1edc30dd00949abf88a69b5f2497187c8",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-rename-mappings:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "c1a314abc00461fa618948f7511fed46289a3511eaff3678565771166ea22033",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-smali-input:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "b568d47c8cb7daec2fc8b5387623c3e68ebefc4961c4f63c79fb843da49f0ce4",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-xapk-input:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "7140085fc77c338fdf1c3041208b2b2efd813d1ef30fdb065c5441137f52e079",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-zip:1.5.6",
+    "scope": "official-cli-bundle",
+    "sha256": "5bd0967715c6502cd5c0a75d732358e9469796d402a928f8852b504cc16f9cef",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jadx-zip:1.5.6",
+    "scope": "runtime",
+    "sha256": "5bd0967715c6502cd5c0a75d732358e9469796d402a928f8852b504cc16f9cef",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:jdwp:2.0.0",
+    "scope": "official-cli-bundle",
+    "sha256": "674d69889c2949cf88fcc206af7f2eafb153316b32e46ccef13cf9151c378eac",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:raung-common:0.1.1",
+    "scope": "official-cli-bundle",
+    "sha256": "6edf3a349db9fdebb5fbb67560be1f70497666c350ec3eaf54d7fcb00de7a481",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.github.skylot:raung-disasm:0.1.1",
+    "scope": "official-cli-bundle",
+    "sha256": "f26401bc7159c301ebfd818699ea104d3affba79d2397e882d0fba29bcfbd2f3",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-events-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "652ce716196b635e7d2988e324cdb06f649b02e526f88680c5c2511e3964bd93",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-http-cio-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "c635b73b050ba842f138c19a46a758d094c7ba6f949d74a0e4d14c78b5fd7e64",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-http-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "0ba1aad28ec212e54f1a1358510d415259efa483075436375ee48d25f8b6bcf8",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-io-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "9c43ed3370e04428b6f3e113fe53c56881459329c18f2ffea2a11008fd096dcf",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-network-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "7c972c97aecc9b27db8377e3347e6f66fad4b524112c073bef2d6150d1194492",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-serialization-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "1d9ee9d0a2d489e8e592552da577cf1dd2d13ce97ab1387c864813381309574a",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-serialization-kotlinx-json-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "68b907facba9caedac5bcfbd6ce3123920fd7606673267ce12d53a8c9a6aa3c3",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-serialization-kotlinx-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "148cd52661c2e4cbb1c88ca4ce3e6622335b4339a3b369054139d0d11a70f630",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-server-content-negotiation-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "acb8ed35fa2e0916d6570adbd9c2337828c5d83c1b28d8fc8c90e32cdc86ed61",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-server-core-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "907792c40323b18f95fed6caeda79c3bad399509e6cdad002cd9c5ccac95b639",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-server-sse-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "de9037bcf8c5a92ecfa7fc7a2fdfa9210652021add821bc3bf36879366dc2aa7",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-server-websockets-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "577d4048ee9475fade2f5b9963e730985f4f8f825407ac436c38dd652f20a040",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-sse-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "0fd6b6dcaded1679a7a55067e8b1de982ed964d4c102637b88ef092913144c39",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-utils-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "daccfd4e43039bec119976cb785356b4cebac927155f501132fb3be83125fa87",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-websocket-serialization-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "d2743212e59ae113d0f0bcbd1320e6bd8212013c48ca2ba52b2631035f622f1c",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.ktor:ktor-websockets-jvm:3.5.1",
+    "scope": "runtime",
+    "sha256": "4d3f2e13068f2b6441ed2b29a3f0c5b796dce4a55e0958efd354839bd444e07f",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.modelcontextprotocol:kotlin-sdk-core-jvm:0.15.0",
+    "scope": "runtime",
+    "sha256": "286b34892ab362365d4d9ba09b6c949199128470f83cf7dd410854f18cc625e1",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "https://github.com/modelcontextprotocol/kotlin-sdk/blob/main/LICENSE"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.modelcontextprotocol:kotlin-sdk-server-jvm:0.15.0",
+    "scope": "runtime",
+    "sha256": "2a3720c631a2e1ba15194838ac0244dc93f702e79e6c361bb35b4ab2e15e3c16",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "https://github.com/modelcontextprotocol/kotlin-sdk/blob/main/LICENSE"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "io.reactivex.rxjava3:rxjava:3.1.12",
+    "scope": "official-cli-bundle",
+    "sha256": "1808a433ef55dcc2965523e512ab914a5d0d727228a2683ed7559d7cccf44e37",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "javax.inject:javax.inject:1",
+    "scope": "official-cli-bundle",
+    "sha256": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://github.com/javax-inject/javax-inject/blob/master/LICENSE"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "net.arnx:nashorn-promise:0.1.1",
+    "scope": "official-cli-bundle",
+    "sha256": "1d2d9df4c0450d4fb1ef6dbe8c1d850b7a9a6c92eb6d817b62e4429ea8de4dfe",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "net.fabricmc:mapping-io:0.8.0",
+    "scope": "official-cli-bundle",
+    "sha256": "cf137c7f9049a8d4c0ada8e765180462bf1cda42172300821229ac2d46b6548c",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.antlr:ST4:4.0.8",
+    "scope": "official-cli-bundle",
+    "sha256": "58caabc40c9f74b0b5993fd868e0f64a50c0759094e6a251aaafad98edfc7a3b",
+    "licenses": [
+      {
+        "name": "BSD licence",
+        "url": "http://antlr.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.antlr:ST4:4.0.8",
+    "scope": "test",
+    "sha256": "58caabc40c9f74b0b5993fd868e0f64a50c0759094e6a251aaafad98edfc7a3b",
+    "licenses": [
+      {
+        "name": "BSD licence",
+        "url": "http://antlr.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.antlr:antlr-runtime:3.5.2",
+    "scope": "official-cli-bundle",
+    "sha256": "ce3fc8ecb10f39e9a3cddcbb2ce350d272d9cd3d0b1e18e6fe73c3b9389c8734",
+    "licenses": [
+      {
+        "name": "BSD licence",
+        "url": "http://antlr.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.antlr:antlr-runtime:3.5.2",
+    "scope": "test",
+    "sha256": "ce3fc8ecb10f39e9a3cddcbb2ce350d272d9cd3d0b1e18e6fe73c3b9389c8734",
+    "licenses": [
+      {
+        "name": "BSD licence",
+        "url": "http://antlr.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.antlr:antlr:3.5.2",
+    "scope": "official-cli-bundle",
+    "sha256": "5ac36c2acfb0a0f3d37dafe20b5b570f2643e2d000c648d44503c2738be643df",
+    "licenses": [
+      {
+        "name": "BSD licence",
+        "url": "http://antlr.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.antlr:antlr:3.5.2",
+    "scope": "test",
+    "sha256": "5ac36c2acfb0a0f3d37dafe20b5b570f2643e2d000c648d44503c2738be643df",
+    "licenses": [
+      {
+        "name": "BSD licence",
+        "url": "http://antlr.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.antlr:stringtemplate:3.2.1",
+    "scope": "official-cli-bundle",
+    "sha256": "f66ce72e965e5301cb0f020e54d2ba6ad76feb91b3cbfc30dbbf00c06a6df6d7",
+    "licenses": [
+      {
+        "name": "BSD licence",
+        "url": "http://antlr.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.antlr:stringtemplate:3.2.1",
+    "scope": "test",
+    "sha256": "f66ce72e965e5301cb0f020e54d2ba6ad76feb91b3cbfc30dbbf00c06a6df6d7",
+    "licenses": [
+      {
+        "name": "BSD licence",
+        "url": "http://antlr.org/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.apache.commons:commons-exec:1.3",
+    "scope": "official-cli-bundle",
+    "sha256": "cb49812dc1bfb0ea4f20f398bcae1a88c6406e213e67f7524fb10d4f8ad9347b",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.apache.commons:commons-lang3:3.20.0",
+    "scope": "official-cli-bundle",
+    "sha256": "69e5c9fa35da7a51a5fd2099dfe56a2d8d32cf233e2f6d770e796146440263f4",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.apache.commons:commons-text:1.15.0",
+    "scope": "official-cli-bundle",
+    "sha256": "58d2da30f058512a1e7f914e39241deca4dff5c27a085b4ed2faa9e7208067f6",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.drjekyll:fontchooser:3.1.0",
+    "scope": "official-cli-bundle",
+    "sha256": "458aa4122e9d94677ccf0b3db99db4312ad49d29fcc6815dfdb887abd9256587",
+    "licenses": [
+      {
+        "name": "GNU Lesser General Public License Version 3",
+        "url": "https://www.gnu.org/licenses/lgpl-3.0.en.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.exbin.auxiliary:binary_data-array:0.2.2",
+    "scope": "official-cli-bundle",
+    "sha256": "1394a30ba4bc109dc825ff5a3194b211632c71a693f36bc0777ddabf271605dd",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.exbin.auxiliary:binary_data:0.2.2",
+    "scope": "official-cli-bundle",
+    "sha256": "ae002f7032d877561e2ec719dd5da4dac414275a6721eb4cc69d0b028d26958a",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.exbin.bined:bined-core:0.2.2",
+    "scope": "official-cli-bundle",
+    "sha256": "b3611f1d067982af75a8a06de1f0e0382c6abf875ff542ca71eaddc7a8995907",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.exbin.bined:bined-highlight-swing:0.2.2",
+    "scope": "official-cli-bundle",
+    "sha256": "9d6161c651a3a2faa189558606830cdd69b4f061d919f55f4a86d4f3d0d457ad",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.exbin.bined:bined-section:0.2.2",
+    "scope": "official-cli-bundle",
+    "sha256": "5a58180a2cb63ef5d7eb227d3233b05ab90093983e79a76584cc511c936e611b",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.exbin.bined:bined-swing-section:0.2.2",
+    "scope": "official-cli-bundle",
+    "sha256": "32a8b56e08a0a1a8b6670d68bfd2b4098d1613049016a264d3c4800a964994f7",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.exbin.bined:bined-swing:0.2.2",
+    "scope": "official-cli-bundle",
+    "sha256": "2ebd4b132d2deeba957877412ec0176e31843e1b3bf5969b1bfb3c8280caab95",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jcommander:jcommander:2.0",
+    "scope": "official-cli-bundle",
+    "sha256": "62fc1edc0ac44b033d70698443750e36ffeb87386cb1d7b294b0ea34384e122c",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlin:kotlin-metadata-jvm:2.3.10",
+    "scope": "official-cli-bundle",
+    "sha256": "c1df5bc6530b4c744b13788dbf8540a469898fdfbcde6abca9119184f5d3707c",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlin:kotlin-reflect:2.3.10",
+    "scope": "official-cli-bundle",
+    "sha256": "10b4a1b5e3957efe90f474bd04a747249a259b2615a6f0504507d323c2be350b",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlin:kotlin-reflect:2.3.21",
+    "scope": "runtime",
+    "sha256": "33e37d9dfa86c7a29ab34e975b5f4a1287b458878611051f3485652220c1a2cb",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlin:kotlin-stdlib:2.3.10",
+    "scope": "official-cli-bundle",
+    "sha256": "f61662c6d3a2f8ef5bd34362a02d877772c39f393cd394feb259dfaf7f4d8437",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlin:kotlin-stdlib:2.4.0",
+    "scope": "runtime",
+    "sha256": "ccb14ff83fabcb11458b798dbc9824748ccdffeec79c9aba789e6ed1cda86b1c",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlinx:kotlinx-collections-immutable-jvm:0.5.1",
+    "scope": "runtime",
+    "sha256": "d5e4bb25d6e90f7471662b3500259e247523a410e6a820dcc4000d386b0c248c",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.11.0",
+    "scope": "runtime",
+    "sha256": "d1d75aa01dffbb4d1c520e67e4c4e7f5f6174718e7cb4632412503f2f0e604fa",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlinx:kotlinx-io-bytestring-jvm:0.9.1",
+    "scope": "runtime",
+    "sha256": "8589de0b7c476bfdd02a24641685f609ade72f5e595cf2909c168acdba7e6ba4",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlinx:kotlinx-io-core-jvm:0.9.1",
+    "scope": "runtime",
+    "sha256": "765d8851d8ca694706931331b92386844800867e041b720f1f193dbda874d370",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.11.0",
+    "scope": "runtime",
+    "sha256": "f4a801c647d4351327cd9e1ac4113e2be9ea37a64ab0abae269c25a52e28f35d",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-json-io-jvm:1.11.0",
+    "scope": "runtime",
+    "sha256": "bbf3005522426ac4ba2acd6dc38f47ea5a3274ee82b932b8841835c7eaddab74",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.11.0",
+    "scope": "runtime",
+    "sha256": "563a25b4eb5c9128ae9c2479f3d1a5c44dcd176112b91cf03682e906eba5c935",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains:annotations:13.0",
+    "scope": "official-cli-bundle",
+    "sha256": "ace2a10dc8e2d5fd34925ecac03e4988b2c0f851650c94b8cef49ba1bd111478",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jetbrains:annotations:23.0.0",
+    "scope": "runtime",
+    "sha256": "7b0f19724082cbfcbc66e5abea2b9bc92cf08a1ea11e191933ed43801eb3cd05",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jspecify:jspecify:1.0.0",
+    "scope": "official-cli-bundle",
+    "sha256": "1fad6e6be7557781e4d33729d49ae1cdc8fdda6fe477bb0cc68ce351eafdfbab",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.jspecify:jspecify:1.0.0",
+    "scope": "runtime",
+    "sha256": "1fad6e6be7557781e4d33729d49ae1cdc8fdda6fe477bb0cc68ce351eafdfbab",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.junit.jupiter:junit-jupiter-api:5.13.4",
+    "scope": "test",
+    "sha256": "d1bb81abfd9e03418306b4e6a3390c8db52c58372e749c2980ac29f0c08278f1",
+    "licenses": [
+      {
+        "name": "Eclipse Public License v2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.junit.jupiter:junit-jupiter-engine:5.13.4",
+    "scope": "test",
+    "sha256": "027404a92fe618b72465792a257951495c503a7d5751e2791e0f51c87f67f5bc",
+    "licenses": [
+      {
+        "name": "Eclipse Public License v2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.junit.jupiter:junit-jupiter-params:5.13.4",
+    "scope": "test",
+    "sha256": "3a8c6365716dbb698c0d49a05456c1e1ad05c406613c550f9dd50037872efc41",
+    "licenses": [
+      {
+        "name": "Eclipse Public License v2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.junit.jupiter:junit-jupiter:5.13.4",
+    "scope": "test",
+    "sha256": "b960f79217dd01c863031b678f07df4730bbf1eac650c74ad6b0c61faad78379",
+    "licenses": [
+      {
+        "name": "Eclipse Public License v2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.junit.platform:junit-platform-commons:1.13.4",
+    "scope": "test",
+    "sha256": "1c25ca641ebaae44ff3ad21ca1b2ef68d0dd84bfeb07c4805ba7840899b77408",
+    "licenses": [
+      {
+        "name": "Eclipse Public License v2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.junit.platform:junit-platform-console-standalone:1.13.4",
+    "scope": "test",
+    "sha256": "3fdfc37e29744a9a67dd5365e81467e26fbde0b7aa204e6f8bbe79eeaa7ae892",
+    "licenses": [
+      {
+        "name": "Eclipse Public License v2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.junit.platform:junit-platform-engine:1.13.4",
+    "scope": "test",
+    "sha256": "390c5f77b84283a64b644f88251b397e0b0debb80bdcc50f899881aecff43a5a",
+    "licenses": [
+      {
+        "name": "Eclipse Public License v2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.junit.platform:junit-platform-launcher:1.13.4",
+    "scope": "test",
+    "sha256": "0b0beaeb6880a31149641d2d848b863712885469670c12099586d7f798522564",
+    "licenses": [
+      {
+        "name": "Eclipse Public License v2.0",
+        "url": "https://www.eclipse.org/legal/epl-v20.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.opentest4j:opentest4j:1.3.0",
+    "scope": "test",
+    "sha256": "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.ow2.asm:asm:9.10.1",
+    "scope": "official-cli-bundle",
+    "sha256": "ed825d10ab1399c8c0cb669e688cf0c8c82629b4c8399b58352b68e92ca10fcb",
+    "licenses": [
+      {
+        "name": "BSD-3-Clause",
+        "url": "https://asm.ow2.io/license.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.reactivestreams:reactive-streams:1.0.4",
+    "scope": "official-cli-bundle",
+    "sha256": "f75ca597789b3dac58f61857b9ac2e1034a68fa672db35055a8fb4509e325f28",
+    "licenses": [
+      {
+        "name": "MIT-0",
+        "url": "https://spdx.org/licenses/MIT-0.html"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.slf4j:jcl-over-slf4j:1.7.30",
+    "scope": "official-cli-bundle",
+    "sha256": "71e9ee37b9e4eb7802a2acc5f41728a4cf3915e7483d798db3b4ff2ec8847c50",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.slf4j:jul-to-slf4j:1.7.30",
+    "scope": "official-cli-bundle",
+    "sha256": "bbcbfdaa72572255c4f85207a9bfdb24358dc993e41252331bd4d0913e4988b9",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.slf4j:slf4j-api:2.0.18",
+    "scope": "official-cli-bundle",
+    "sha256": "44508fd1576500688c790b190acdd16fec4f8c79a3e0b900afd70503cf055f55",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://opensource.org/license/mit"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.slf4j:slf4j-api:2.0.18",
+    "scope": "runtime",
+    "sha256": "44508fd1576500688c790b190acdd16fec4f8c79a3e0b900afd70503cf055f55",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://opensource.org/license/mit"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.slf4j:slf4j-nop:2.0.18",
+    "scope": "runtime",
+    "sha256": "40e6be27d583d884183ca466cd20203112691f2a075a650e9e8d5c2e51aa5f49",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://opensource.org/license/mit"
+      }
+    ]
+  },
+  {
+    "ecosystem": "maven",
+    "coordinate": "org.webjars.npm:viz.js-graphviz-java:2.1.3",
+    "scope": "official-cli-bundle",
+    "sha256": "6c1cd06d74fb155b9f9c08e7ab2b0e50509ddad4311ce9a04958bd7a7ba7162c",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://spdx.org/licenses/MIT#licenseText"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "@hono/node-server@2.1.5",
+    "scope": "runtime",
+    "integrity": "sha512-MgP/I06GdvsilDspMk/qmRzpk8LOUStP6jFAbSRi40W09DhoyUn+Mj7eyKICPqeYKybOjVFLVIAQzvu1bfIa7Q==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/honojs/node-server"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "@modelcontextprotocol/sdk@1.32.1",
+    "scope": "runtime",
+    "integrity": "sha512-2DdE+SJDtzLEEWzY1ZjY7Q+VcPhcV1KisD3zI4u0XZyktsjHum1mwbMI+JaulUBi2OZk+KJAi2uPXzxichPkdw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://modelcontextprotocol.io"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "@types/node@24.10.1",
+    "scope": "development",
+    "integrity": "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "accepts@2.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "ajv-formats@3.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ajv-validator/ajv-formats#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "ajv@8.20.0",
+    "scope": "runtime",
+    "integrity": "sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://ajv.js.org"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "body-parser@2.3.0",
+    "scope": "runtime",
+    "integrity": "sha512-2cGmJupaNgg+QUwVLAucDuWuoMZ6EX9iHDRswZ5lsNYEmwPaRknMPCLZz07yTzVq/83p4o/wzbDZbBrTvGGTIw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "bytes@3.1.2",
+    "scope": "runtime",
+    "integrity": "sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "call-bind-apply-helpers@1.0.2",
+    "scope": "runtime",
+    "integrity": "sha512-Sp1ablJ0ivDkSzjcaJdxEunN5/XvksFJ2sMBFfq6x0ryhQV/2b/KwFe21cMpmHtPOSij8K99/wSfoEuTObmuMQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/call-bind-apply-helpers#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "call-bound@1.0.4",
+    "scope": "runtime",
+    "integrity": "sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/call-bound#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "content-disposition@2.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-e+H0ZXHSWYrENhQzw1LPuP4oF5MzVKmDU6d3hxlvaPEYLLg62MxtQNPRx4SYSuYJSBUgnQIG4HIN2tEtNv7Dog==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "content-type@1.0.5",
+    "scope": "runtime",
+    "integrity": "sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "content-type@2.1.0",
+    "scope": "runtime",
+    "integrity": "sha512-mj7UPXE0jaqaOsukNZRUEfEi2AcL7C/vwmwcHV0O97eO1E1pxBZuyjlZrx5seTaNBg1U6+o35wpa35Qfcc+7ag==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "content-type@2.1.0",
+    "scope": "runtime",
+    "integrity": "sha512-mj7UPXE0jaqaOsukNZRUEfEi2AcL7C/vwmwcHV0O97eO1E1pxBZuyjlZrx5seTaNBg1U6+o35wpa35Qfcc+7ag==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "content-type@2.1.0",
+    "scope": "runtime",
+    "integrity": "sha512-mj7UPXE0jaqaOsukNZRUEfEi2AcL7C/vwmwcHV0O97eO1E1pxBZuyjlZrx5seTaNBg1U6+o35wpa35Qfcc+7ag==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "content-type@2.1.0",
+    "scope": "runtime",
+    "integrity": "sha512-mj7UPXE0jaqaOsukNZRUEfEi2AcL7C/vwmwcHV0O97eO1E1pxBZuyjlZrx5seTaNBg1U6+o35wpa35Qfcc+7ag==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "cookie-signature@1.2.2",
+    "scope": "runtime",
+    "integrity": "sha512-D76uU73ulSXrD1UXF4KE2TMxVVwhsnCgfAyTg9k8P6KGZjlXKrOLe4dJQKI3Bxi5wjesZoFXJWElNWBjPZMbhg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "cookie@0.7.2",
+    "scope": "runtime",
+    "integrity": "sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "cors@2.8.6",
+    "scope": "runtime",
+    "integrity": "sha512-tJtZBBHA6vjIAaF6EnIaq6laBBP9aq/Y3ouVJjEfoHbRBcHBAHYcMh/w8LDrk2PvIMMq8gmopa5D4V8RmbrxGw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "cross-spawn@7.0.6",
+    "scope": "runtime",
+    "integrity": "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/moxystudio/node-cross-spawn"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "debug@4.4.3",
+    "scope": "runtime",
+    "integrity": "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "depd@2.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "dunder-proto@1.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/es-shims/dunder-proto#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "ee-first@1.1.1",
+    "scope": "runtime",
+    "integrity": "sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "encodeurl@2.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "es-define-property@1.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/es-define-property#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "es-errors@1.3.0",
+    "scope": "runtime",
+    "integrity": "sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/es-errors#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "es-object-atoms@1.1.2",
+    "scope": "runtime",
+    "integrity": "sha512-HWcBoN6NileqtSydK2FqHbS/LoDd2pqrnQHLyJzBj4kOp/ky2MWMN694xOfkK8/SnUsW2DH7EfyVlydKCsm1Zw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/es-object-atoms#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "escape-html@1.0.3",
+    "scope": "runtime",
+    "integrity": "sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "etag@1.8.1",
+    "scope": "runtime",
+    "integrity": "sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "eventsource-parser@3.1.1",
+    "scope": "runtime",
+    "integrity": "sha512-EKN1vKAMcZ8MlYMpaNuxN6R9yakzH6uajHcHVTqWJzvu5pWw9DyhbP35HH8MVBQ+dZjAfDxk+A8NiR9KWaXiyQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/rexxars/eventsource-parser#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "eventsource@3.0.7",
+    "scope": "runtime",
+    "integrity": "sha512-CRT1WTyuQoD771GW56XEZFQ/ZoSfWid1alKGDYMmkt2yl8UXrVR4pspqWNEcqKvVIzg6PAltWjxcSSPrboA4iA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/EventSource/eventsource#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "express-rate-limit@8.7.1",
+    "scope": "runtime",
+    "integrity": "sha512-2FXbqkygil3mZiXzEtM0IjE/UBmBNot0J1GEVrJT4JbrvwOSoEtqtO+wHbiMQELWe1eNvHoYRg2dkjOid+6JkA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/express-rate-limit/express-rate-limit"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "express@5.3.0",
+    "scope": "runtime",
+    "integrity": "sha512-qCqy1xSoaugxOD4IVHb1ZWdkvCF2W3aE2okKouWj8VwJ+ztskSiXoBnCSJqfKT+cVPJhuJqe9YLbY425+Zh00g==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://expressjs.com/"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "fast-deep-equal@3.1.3",
+    "scope": "runtime",
+    "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/epoberezkin/fast-deep-equal#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "fast-uri@3.1.9",
+    "scope": "runtime",
+    "integrity": "sha512-hS/0Wt3Ya043oKXs0sIxrMpKQITXhMLIrVAKKXi4gozGC9v7YRWVnXIZzjNPTO02M9BdxLCWqK1yRXgNziVyJQ==",
+    "licenses": [
+      {
+        "name": "BSD-3-Clause",
+        "url": "https://github.com/fastify/fast-uri"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "finalhandler@2.1.1",
+    "scope": "runtime",
+    "integrity": "sha512-S8KoZgRZN+a5rNwqTxlZZePjT/4cnm0ROV70LedRHZ0p8u9fRID0hJUZQpkKLzro8LfmC8sx23bY6tVNxv8pQA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "forwarded@0.2.0",
+    "scope": "runtime",
+    "integrity": "sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "fresh@2.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-Rx/WycZ60HOaqLKAi6cHRKKI7zxWbJ31MhntmtwMoaTeF7XFH9hhBp8vITaMidfljRQ6eYWCKkaTK+ykVJHP2A==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "function-bind@1.1.2",
+    "scope": "runtime",
+    "integrity": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/Raynos/function-bind"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "get-intrinsic@1.3.0",
+    "scope": "runtime",
+    "integrity": "sha512-9fSjSaos/fRIVIp+xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0mOjjz8GJDURarmCPGqaiVg5mfjb98CQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/get-intrinsic#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "get-proto@1.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/get-proto#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "gopd@1.2.0",
+    "scope": "runtime",
+    "integrity": "sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/gopd#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "has-symbols@1.1.0",
+    "scope": "runtime",
+    "integrity": "sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/has-symbols#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "hasown@2.0.4",
+    "scope": "runtime",
+    "integrity": "sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/inspect-js/hasOwn#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "hono@4.13.13",
+    "scope": "runtime",
+    "integrity": "sha512-CQ46U0ZkAGmbT/4UxdzzGJpacP2IeKgY4a5/tOI9AABbpOMfK739wfDXmv1usCk+3RkKj1hQy4/fjhiwa2xlrA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://hono.dev"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "http-errors@2.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-4FbRdAX+bSdmo4AUFuS0WNiPz8NgFt+r8ThgNWmlrjQjt1Q7ZR9+zTlce2859x4KSXrwIsaeTqDoKQmtP8pLmQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "iconv-lite@0.7.3",
+    "scope": "runtime",
+    "integrity": "sha512-IKXpvIzjnC9XTAUbVBcMfGS0EPaIXtW6v+zr+RRp+hqULEpo0owZax6wyRwPOJbWbzjYspQwusTsfVr0ifh4uQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/pillarjs/iconv-lite"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "inherits@2.0.4",
+    "scope": "runtime",
+    "integrity": "sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==",
+    "licenses": [
+      {
+        "name": "ISC",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "ip-address@10.7.4",
+    "scope": "runtime",
+    "integrity": "sha512-DWBMKyeM25D70nrIiTkgQth59/G+naKOTep6huF9j+GmeK3DMD60Zvxg5d5qQnz+38AHgou6ean2LECX+lrKDg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "ipaddr.js@1.9.1",
+    "scope": "runtime",
+    "integrity": "sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "is-promise@4.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-hvpoI6korhJMnej285dSg6nu1+e6uxs7zG3BYAm5byqDsgJNWwxzM6z6iZiAgQR4TJ30JmBTOwqZUw3WlyH3AQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "isexe@2.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==",
+    "licenses": [
+      {
+        "name": "ISC",
+        "url": "https://github.com/isaacs/isexe#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "jose@6.2.13",
+    "scope": "runtime",
+    "integrity": "sha512-7TIg10ZE1x82YediN+lcrPNvGMKge9yFHQD+Qho/b8y2adfugU3AsvvHfxV0fzyFllT6l9xCjf4RWY9g/Z9PJQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/panva/jose"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "json-schema-traverse@1.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/epoberezkin/json-schema-traverse#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "json-schema-typed@8.0.2",
+    "scope": "runtime",
+    "integrity": "sha512-fQhoXdcvc3V28x7C7BMs4P5+kNlgUURe2jmUT1T//oBRMDrqy1QPelJimwZGo7Hg9VPV3EQV5Bnq4hbFy2vetA==",
+    "licenses": [
+      {
+        "name": "BSD-2-Clause",
+        "url": "https://github.com/RemyRylan/json-schema-typed/tree/main/dist/node"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "math-intrinsics@1.1.0",
+    "scope": "runtime",
+    "integrity": "sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/es-shims/math-intrinsics#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "media-typer@1.1.1",
+    "scope": "runtime",
+    "integrity": "sha512-yz3xRaG20c6/BOzvYoDaGtPmGscs7YivItZEEqe6GbwNfHuxu9YNmvnEkMzKldAGY4/80pRcQRZSEnhquk9XuQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "merge-descriptors@2.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-Snk314V5ayFLhp3fkUREub6WtjBfPdCPY1Ln8/8munuLuiYhsABgBVWsozAG+MWMbVEvcdcpbi9R7ww22l9Q3g==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "mime-db@1.54.0",
+    "scope": "runtime",
+    "integrity": "sha512-aU5EJuIN2WDemCcAp2vFBfp/m4EAhWJnUNSSw0ixs7/kXbd6Pg64EmwJkNdFhB8aWt1sH2CTXrLxo/iAGV3oPQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "mime-types@3.0.2",
+    "scope": "runtime",
+    "integrity": "sha512-Lbgzdk0h4juoQ9fCKXW4by0UJqj+nOOrI9MJ1sSj4nI8aI2eo1qmvQEie4VD1glsS250n15LsWsYtCugiStS5A==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "ms@2.1.3",
+    "scope": "runtime",
+    "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "negotiator@1.1.0",
+    "scope": "runtime",
+    "integrity": "sha512-NMPBRMJgiQHjbd8phG3Vebdx4kZ1H121rbl5IkMqeOsahptB9BKo/d7oJ3zTXqTgagn2bWlNSXkh0QUGM31RYg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "object-assign@4.1.1",
+    "scope": "runtime",
+    "integrity": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "object-inspect@1.13.4",
+    "scope": "runtime",
+    "integrity": "sha512-W67iLl4J2EXEGTbfeHCffrjDfitvLANg0UlX3wFUUSTx92KXRFegMHUVgSqE+wvhAbi4WqjGg9czysTV2Epbew==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/inspect-js/object-inspect"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "on-finished@2.4.1",
+    "scope": "runtime",
+    "integrity": "sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "once@1.4.0",
+    "scope": "runtime",
+    "integrity": "sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==",
+    "licenses": [
+      {
+        "name": "ISC",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "parseurl@1.3.3",
+    "scope": "runtime",
+    "integrity": "sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "path-key@3.1.1",
+    "scope": "runtime",
+    "integrity": "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "path-to-regexp@8.4.2",
+    "scope": "runtime",
+    "integrity": "sha512-qRcuIdP69NPm4qbACK+aDogI5CBDMi1jKe0ry5rSQJz8JVLsC7jV8XpiJjGRLLol3N+R5ihGYcrPLTno6pAdBA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "pkce-challenge@5.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-wQ0b/W4Fr01qtpHlqSqspcj3EhBvimsdh0KlHhH8HRZnMsEa0ea2fTULOXOS9ccQr3om+GcGRk4e+isrZWV8qQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/crouchcd/pkce-challenge#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "proxy-addr@2.0.8",
+    "scope": "runtime",
+    "integrity": "sha512-5nnx0yGyVUcY6t9RnWcARWtwT9F1D8O9rt08htPvnd49W1IgZtmLkhu9WfMzQj1cFxjHIO6connUNVW5k7AVyQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "qs@6.16.1",
+    "scope": "runtime",
+    "integrity": "sha512-5Px6J7rfHBAGUhNQ3es4YzcOdBBw0SDcVtThJml4RdnKw4tKs2epA0kPZ+K8X+WiHktT93RHVcQ/3ym5aTCgtg==",
+    "licenses": [
+      {
+        "name": "BSD-3-Clause",
+        "url": "https://github.com/ljharb/qs"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "range-parser@1.3.0",
+    "scope": "runtime",
+    "integrity": "sha512-hek2mFQpPuI4E1BBKrSto+BU3e3x4xuarsbiwr3+lf7p44juvFMV0XFWQAP3xUyqXA4RrXLIoaSUGbSt056ZMw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "raw-body@3.0.2",
+    "scope": "runtime",
+    "integrity": "sha512-K5zQjDllxWkf7Z5xJdV0/B0WTNqx6vxG70zJE4N0kBs4LovmEYWJzQGxC9bS9RAKu3bgM40lrd5zoLJ12MQ5BA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "require-from-string@2.0.2",
+    "scope": "runtime",
+    "integrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "router@2.2.0",
+    "scope": "runtime",
+    "integrity": "sha512-nLTrUKm2UyiL7rlhapu/Zl45FwNgkZGaCpZbIHajDYgwlJCOzLSk+cIPAnsEqV955GjILJnKbdQC1nVPz+gAYQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "safer-buffer@2.1.2",
+    "scope": "runtime",
+    "integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "saxes@6.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==",
+    "licenses": [
+      {
+        "name": "ISC",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "send@1.2.1",
+    "scope": "runtime",
+    "integrity": "sha512-1gnZf7DFcoIcajTjTwjwuDjzuz4PPcY2StKPlsGAQ1+YH20IRVrBaXSWmdjowTJ6u8Rc01PoYOGHXfP1mYcZNQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "serve-static@2.2.1",
+    "scope": "runtime",
+    "integrity": "sha512-xRXBn0pPqQTVQiC8wyQrKs2MOlX24zQ0POGaj0kultvoOCstBQM5yvOhAVSUwOMjQtTvsPWoNCHfPGwaaQJhTw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "setprototypeof@1.2.0",
+    "scope": "runtime",
+    "integrity": "sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==",
+    "licenses": [
+      {
+        "name": "ISC",
+        "url": "https://github.com/wesleytodd/setprototypeof"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "shebang-command@2.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "shebang-regex@3.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "side-channel-list@1.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-mjn/0bi/oUURjc5Xl7IaWi/OJJJumuoJFQJfDDyO46+hBWsfaVM65TBHq2eoZBhzl9EchxOijpkbRC8SVBQU0w==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/side-channel-list#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "side-channel-map@1.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-VCjCNfgMsby3tTdo02nbjtM/ewra6jPHmpThenkTYh8pG9ucZ/1P8So4u4FGBek/BjpOVsDCMoLA/iuBKIFXRA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/side-channel-map#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "side-channel-weakmap@1.0.2",
+    "scope": "runtime",
+    "integrity": "sha512-WPS/HvHQTYnHisLo9McqBHOJk2FkHO/tlpvldyrnem4aeQp4hai3gythswg6p01oSoTl58rcpiFAjF2br2Ak2A==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/side-channel-weakmap#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "side-channel@1.1.1",
+    "scope": "runtime",
+    "integrity": "sha512-6x6dK6zJdpTzF4sQeNYxwtvBzf6Eg4GtlesS94HOvTudUeyK2WXAaIfmDgsyslYrRBeFIlsi54AYsFGUuhmvrQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/ljharb/side-channel#readme"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "statuses@2.0.2",
+    "scope": "runtime",
+    "integrity": "sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "toidentifier@1.0.1",
+    "scope": "runtime",
+    "integrity": "sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "type-is@2.1.0",
+    "scope": "runtime",
+    "integrity": "sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "typescript@5.9.3",
+    "scope": "development",
+    "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.typescriptlang.org/"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "undici-types@7.16.0",
+    "scope": "development",
+    "integrity": "sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://undici.nodejs.org"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "unpipe@1.0.0",
+    "scope": "runtime",
+    "integrity": "sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "vary@1.1.2",
+    "scope": "runtime",
+    "integrity": "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "which@2.0.2",
+    "scope": "runtime",
+    "integrity": "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==",
+    "licenses": [
+      {
+        "name": "ISC",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "wrappy@1.0.2",
+    "scope": "runtime",
+    "integrity": "sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==",
+    "licenses": [
+      {
+        "name": "ISC",
+        "url": "https://github.com/npm/wrappy"
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "xmlchars@2.2.0",
+    "scope": "runtime",
+    "integrity": "sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "zod-to-json-schema@3.25.2",
+    "scope": "runtime",
+    "integrity": "sha512-O/PgfnpT1xKSDeQYSCfRI5Gy3hPf91mKVDuYLUHZJMiDFptvP41MSnWofm8dnCm0256ZNfZIM7DSzuSMAFnjHA==",
+    "licenses": [
+      {
+        "name": "ISC",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "ecosystem": "npm",
+    "coordinate": "zod@4.6.7",
+    "scope": "runtime",
+    "integrity": "sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://zod.dev"
+      }
+    ]
+  },
+  {
+    "ecosystem": "tool",
+    "coordinate": "tiktoken@0.12.0",
+    "scope": "optional measurement",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "https://github.com/openai/tiktoken/blob/main/LICENSE"
+      }
+    ]
+  }
+]

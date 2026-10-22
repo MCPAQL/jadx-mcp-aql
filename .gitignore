@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+.gradle/
+.tools/
+build/
+__pycache__/
+.kotlin/
+node_modules/
+dist/
+*.tgz

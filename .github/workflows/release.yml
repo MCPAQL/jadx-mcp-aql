@@ -1,0 +1,55 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    environment: release
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.16.0'
+          registry-url: https://registry.npmjs.org
+      - name: Verify tag and build tools
+        run: |
+          node -e 'const p=require("./packages/jadx-aql/package.json"); if(process.env.GITHUB_REF_NAME!=="v"+p.version)process.exit(1)'
+          python3 scripts/bootstrap.py
+      - name: Build, test and check reproducibility
+        run: |
+          source .tools/env.sh
+          export SOURCE_DATE_EPOCH="$(cat .source-date-epoch)"
+          npm ci --ignore-scripts
+          npm run build
+          .tools/gradle-8.14.3/bin/gradle --no-daemon build :rea-compat:testClasspath
+          npm test
+          sudo env "JAVA_HOME=$JAVA_HOME" "PATH=$PATH" unshare -n bash scripts/run-compiled-tests.sh
+          python3 scripts/reproducible-build.py
+      - name: Package release artifacts and checksums
+        run: |
+          mkdir artifacts
+          cp rea-compat/build/libs/rea-compat.jar artifacts/
+          npm pack --workspace @mcpaql/jadx-aql --pack-destination artifacts
+          cd artifacts
+          sha256sum rea-compat.jar *.tgz > SHA256SUMS
+      - name: Attest release artifact provenance with Sigstore
+        id: provenance
+        uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # v3
+        with:
+          subject-path: artifacts/*
+      - name: Publish public npm package with provenance
+        # Configure this workflow as a trusted publisher for @mcpaql/jadx-aql.
+        run: npm publish --provenance --access public artifacts/*.tgz
+      - name: Publish GitHub release files and attestation bundle
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROVENANCE_BUNDLE: ${{ steps.provenance.outputs.bundle-path }}
+        run: |
+          cp "$PROVENANCE_BUNDLE" artifacts/provenance.sigstore.json
+          gh release create "$GITHUB_REF_NAME" artifacts/* --verify-tag --generate-notes

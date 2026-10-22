@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+name: Build and verify
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.16.0'
+      - name: Fetch checksum-pinned build tools
+        run: python3 scripts/bootstrap.py
+      - name: Build and test both components
+        run: |
+          source .tools/env.sh
+          export SOURCE_DATE_EPOCH="$(cat .source-date-epoch)"
+          npm ci --ignore-scripts
+          npm run build
+          .tools/gradle-8.14.3/bin/gradle --no-daemon build :rea-compat:testClasspath :rea-compat:dependencyReport :rea-compat:cliDependencyReport
+          npm test
+      - name: Run every compiled test with networking disabled
+        run: |
+          source .tools/env.sh
+          sudo env "JAVA_HOME=$JAVA_HOME" "PATH=$PATH" unshare -n bash scripts/run-compiled-tests.sh
+      - name: Compare two clean JAR builds
+        run: |
+          source .tools/env.sh
+          python3 scripts/reproducible-build.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: verified-build
+          path: |
+            rea-compat/build/libs/rea-compat.jar
+            build/reproducibility.json

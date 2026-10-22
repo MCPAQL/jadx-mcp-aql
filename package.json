@@ -1,0 +1,13 @@
+{
+  "name": "jadx-aql-workspace",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "workspaces": [
+    "packages/jadx-aql"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @mcpaql/jadx-aql",
+    "test": "npm run test --workspace @mcpaql/jadx-aql",
+    "measure": "node scripts/capture.mjs"
+  }
+}

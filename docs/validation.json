@@ -1,0 +1,56 @@
+{
+  "typescript_tests": {
+    "passed": 16,
+    "failed": 0
+  },
+  "shim_unit_tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "rea_bridge_integration": {
+    "passed": 7,
+    "failed": 0
+  },
+  "network_denied": {
+    "all_30_tests_passed": true,
+    "outbound_probe_denied": true,
+    "mechanism": "macOS sandbox-exec deny network"
+  },
+  "reproducible_jar": {
+    "sha256": "7deac1765a3d788bfda43bab67f44ff62c73f191ff68e50dd075727d3fa4b9ca",
+    "identical": true,
+    "independent_source_paths": true,
+    "clean_compilations": 2,
+    "source_date_epoch": "1783641600"
+  },
+  "jar": {
+    "file": "rea-compat.jar",
+    "bytes": 20590803,
+    "sha256": "7deac1765a3d788bfda43bab67f44ff62c73f191ff68e50dd075727d3fa4b9ca",
+    "central_directory_bytes": 1307905
+  },
+  "npm_package": {
+    "file": "mcpaql-jadx-aql-0.1.0.tgz",
+    "bytes": 31017,
+    "sha256": "520b85f13d79b4b7c3ae21cf45c0b6e1b3cfd9cb52b32b40ecddb576f0a1c796",
+    "files": 16,
+    "public_content_scan": "passed"
+  },
+  "rea_runtime": {
+    "initialize_seconds": 0.5123581669999999,
+    "stderr_bytes": 269,
+    "max_frame_bytes": 1048867
+  },
+  "dependency_records": 262,
+  "workflows": {
+    "yaml_parsed": true,
+    "ci_executed_remotely": false,
+    "release_or_npm_publish_executed": false
+  },
+  "limitations": [
+    "No live REA VM test or installation",
+    "Local tokenizer counts only; no Anthropic API count",
+    "No exact original tools/list baseline supplied",
+    "Official CLI cannot expose raw smali or complete use-in inventories"
+  ]
+}
